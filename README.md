@@ -4,8 +4,6 @@ A **WoW Forever** addon that lists every dungeon quest available to your charact
 
 By **CrownedFoxxy**.
 
-*Formerly named "Dungeon Quest Tracker" (1.0.x).*
-
 > ⚠ **Horde and Skyborne are untested.** The addon has only been tested on Alliance characters so far. Quest data and colors may be wrong on Horde or Skyborne characters. Please report anything that looks off.
 
 ## Features
