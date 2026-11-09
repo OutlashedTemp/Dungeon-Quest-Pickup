@@ -2,7 +2,7 @@
 ## Title: |cffF1592ADungeon Quest Tracker|r
 ## Notes: Lists every dungeon quest for your faction, color coded by status, with world map pins.
 ## Author: CrownedFoxxy
-## Version: 1.0.0
+## Version: 1.0.1
 ## Category: Quests
 ## X-License: GPL-3.0
 ## SavedVariables: DQT_DB

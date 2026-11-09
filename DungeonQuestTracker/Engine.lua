@@ -202,6 +202,7 @@ end
 
 -- No data on who/what starts the quest.
 function Engine.GiverUnknown(q)
+    if q and q.inside == true then return false end
     local s = q and q.start
     return not (s and (s.npc or s.object or s.item))
 end
@@ -250,10 +251,22 @@ local function IgnoreStore()
     return ns.chardb and ns.chardb.ignored or { quests = {}, dungeons = {} }
 end
 
+-- Every dungeon a quest is listed under (most have one; e.g. Scarlet Monastery quests span wings).
+function Engine.DungeonsOf(q)
+    if q.ds then return q.ds end
+    return q.d and { q.d } or {}
+end
+
+-- Hidden if ignored itself, or if every dungeon it belongs to is ignored.
 function Engine.IsIgnored(id)
     local q = Q[id]
     local store = IgnoreStore()
-    return store.quests[id] == true or (q ~= nil and q.d ~= nil and store.dungeons[q.d] == true)
+    if store.quests[id] == true then return true end
+    if not q or not q.d then return false end
+    for _, key in ipairs(Engine.DungeonsOf(q)) do
+        if not store.dungeons[key] then return false end
+    end
+    return true
 end
 
 function Engine.SetQuestIgnored(id, ignored)
@@ -285,11 +298,15 @@ end
 function Engine.GetDungeonList()
     local byDungeon = {}
     for id, q in pairs(Q) do
-        if q.d and D[q.d] and not Engine.IsIgnored(id) then
+        if q.d and not IgnoreStore().quests[id] then
             local st = Engine.Status(id)
             if STATUS_ORDER[st] then
-                byDungeon[q.d] = byDungeon[q.d] or {}
-                table.insert(byDungeon[q.d], { id = id, q = q, status = st })
+                for _, key in ipairs(Engine.DungeonsOf(q)) do
+                    if D[key] and not IgnoreStore().dungeons[key] then
+                        byDungeon[key] = byDungeon[key] or {}
+                        table.insert(byDungeon[key], { id = id, q = q, status = st })
+                    end
+                end
             end
         end
     end

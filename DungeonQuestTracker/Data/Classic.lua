@@ -11,15 +11,21 @@ D.BFD = { name = "Blackfathom Deeps", min = 23, max = 28, entrance = { map = 144
 D.STOCKS = { name = "The Stockade", min = 25, max = 29, entrance = { map = 1453, x = 52.41, y = 70.01 }, isNew = false }
 D.GNOMER = { name = "Gnomeregan", min = 29, max = 34, entrance = { map = 1426, x = 24.30, y = 39.80 }, isNew = false }
 D.RFK = { name = "Razorfen Kraul", min = 30, max = 38, entrance = { map = 1413, x = 42.90, y = 90.20 }, isNew = false }
-D.SM = { name = "Scarlet Monastery", min = 30, max = 46, entrance = { map = 1420, x = 82.60, y = 33.80 }, isNew = false }
+D.SM_GY = { name = "Scarlet Monastery: Graveyard", min = 30, max = 38, entrance = { map = 1420, x = 82.60, y = 33.80 }, isNew = false }
+D.SM_LIB = { name = "Scarlet Monastery: Library", min = 33, max = 41, entrance = { map = 1420, x = 82.60, y = 33.80 }, isNew = false }
+D.SM_ARM = { name = "Scarlet Monastery: Armory", min = 36, max = 44, entrance = { map = 1420, x = 82.60, y = 33.80 }, isNew = false }
+D.SM_CATH = { name = "Scarlet Monastery: Cathedral", min = 38, max = 46, entrance = { map = 1420, x = 82.60, y = 33.80 }, isNew = false }
 D.ULDA = { name = "Uldaman", min = 37, max = 45, entrance = { map = 1418, x = 44.60, y = 12.10 }, isNew = false }
 D.RFD = { name = "Razorfen Downs", min = 37, max = 45, entrance = { map = 1413, x = 49.00, y = 93.90 }, isNew = false }
 D.ZF = { name = "Zul'Farrak", min = 40, max = 47, entrance = { map = 1446, x = 38.70, y = 20.10 }, isNew = false }
 D.MARA = { name = "Maraudon", min = 45, max = 51, entrance = { map = 1443, x = 29.10, y = 62.50 }, isNew = false }
 D.ST = { name = "Sunken Temple", min = 50, max = 55, entrance = { map = 1435, x = 69.90, y = 53.50 }, isNew = false }
 D.BRD = { name = "Blackrock Depths", min = 52, max = 60, entrance = { map = 1427, x = 34.80, y = 85.30 }, isNew = false }
-D.BRS = { name = "Blackrock Spire", min = 57, max = 60, entrance = { map = 1427, x = 34.80, y = 85.30 }, isNew = false }
-D.DIRE = { name = "Dire Maul", min = 58, max = 60, entrance = { map = 1444, x = 59.20, y = 45.10 }, isNew = false }
+D.LBRS = { name = "Lower Blackrock Spire", min = 57, max = 60, entrance = { map = 1427, x = 34.80, y = 85.30 }, isNew = false }
+D.UBRS = { name = "Upper Blackrock Spire", min = 60, max = 60, entrance = { map = 1427, x = 34.80, y = 85.30 }, isNew = false }
+D.DIRE_E = { name = "Dire Maul East - Warpwood Quarter", min = 58, max = 60, entrance = { map = 1444, x = 59.20, y = 45.10 }, isNew = false }
+D.DIRE_N = { name = "Dire Maul North - Gordok Commons", min = 60, max = 60, entrance = { map = 1444, x = 59.20, y = 45.10 }, isNew = false }
+D.DIRE_W = { name = "Dire Maul West - Capital Gardens", min = 60, max = 60, entrance = { map = 1444, x = 59.20, y = 45.10 }, isNew = false }
 D.STRAT = { name = "Stratholme", min = 58, max = 60, entrance = { map = 1423, x = 26.52, y = 10.36 }, isNew = false }
 D.SCHOLO = { name = "Scholomance", min = 58, max = 60, entrance = { map = 1422, x = 69.70, y = 73.20 }, isNew = false }
 
@@ -67,18 +73,18 @@ Q[962] = { name = "Serpentbloom", d = "WC", lvl = 18, min = 14, races = 85899347
 Q[971] = { name = "Knowledge in the Deeps", d = "BFD", lvl = 23, min = 10, races = 4294967373, share = true, start = { npc = "Gerrig Bonegrip", map = 1455, x = 50.83, y = 5.62 } }
 Q[1013] = { name = "The Book of Ur", d = "SFK", lvl = 26, min = 16, races = 8589934770, share = true, start = { npc = "Keeper Bel'dugur", map = 1458, x = 53.74, y = 54.46 } }
 Q[1014] = { name = "Arugal Must Die", d = "SFK", lvl = 27, min = 18, races = 8589934770, share = true, start = { npc = "Dalar Dawnweaver", map = 1421, x = 44.20, y = 39.81 } }
-Q[1048] = { name = "Into The Scarlet Monastery", d = "SM", lvl = 42, min = 33, races = 8589934770, share = true, start = { npc = "Varimathras", map = 1458, x = 56.25, y = 92.20 } }
-Q[1049] = { name = "Compendium of the Fallen", d = "SM", lvl = 38, min = 28, races = 162, share = true, start = { npc = "Sage Truthseeker", map = 1456, x = 34.40, y = 46.87 } }
-Q[1050] = { name = "Mythology of the Titans", d = "SM", lvl = 38, min = 28, races = 4294967373, share = true, start = { npc = "Librarian Mae Paledust", map = 1455, x = 74.97, y = 12.48 } }
-Q[1051] = { name = "Vorrel's Revenge", d = "SM", lvl = 33, min = 25, races = 8589934770, share = true, start = { npc = "Vorrel Sengutz" } }
+Q[1048] = { name = "Into The Scarlet Monastery", d = "SM_GY", ds = { "SM_GY", "SM_LIB", "SM_ARM", "SM_CATH" }, lvl = 42, min = 33, races = 8589934770, share = true, start = { npc = "Varimathras", map = 1458, x = 56.25, y = 92.20 } }
+Q[1049] = { name = "Compendium of the Fallen", d = "SM_LIB", lvl = 38, min = 28, races = 162, share = true, start = { npc = "Sage Truthseeker", map = 1456, x = 34.40, y = 46.87 } }
+Q[1050] = { name = "Mythology of the Titans", d = "SM_LIB", lvl = 38, min = 28, races = 4294967373, share = true, start = { npc = "Librarian Mae Paledust", map = 1455, x = 74.97, y = 12.48 } }
+Q[1051] = { name = "Vorrel's Revenge", d = "SM_GY", lvl = 33, min = 25, races = 8589934770, share = true, start = { npc = "Vorrel Sengutz" } }
 Q[1052] = { name = "Down the Scarlet Path", lvl = 40, min = 34, races = 4294967373, preAny = { 261 }, start = { npc = "Brother Anton", map = 1443, x = 66.52, y = 7.91 } }
-Q[1053] = { name = "In the Name of the Light", d = "SM", lvl = 40, min = 34, races = 4294967373, preAny = { 1052 }, share = true, start = { npc = "Raleigh the Devout", map = 1424, x = 51.47, y = 58.35 } }
+Q[1053] = { name = "In the Name of the Light", d = "SM_GY", ds = { "SM_GY", "SM_LIB", "SM_ARM", "SM_CATH" }, lvl = 40, min = 34, races = 4294967373, preAny = { 1052 }, share = true, start = { npc = "Raleigh the Devout", map = 1424, x = 51.47, y = 58.35 } }
 Q[1098] = { name = "Deathstalkers in Shadowfang", d = "SFK", lvl = 25, min = 18, races = 8589934770, share = true, start = { npc = "High Executor Hadrec", map = 1421, x = 43.42, y = 40.86 } }
 Q[1100] = { name = "Lonebrow's Journal", lvl = 34, min = 29, races = 4294967373, next = 1101, start = { item = "Henrig Lonebrow's Journal" } }
 Q[1101] = { name = "The Crone of the Kraul", d = "RFK", lvl = 34, min = 29, races = 4294967373, preAny = { 1100 }, share = true, start = { npc = "Falfindel Waywarder", map = 1444, x = 89.64, y = 46.57 } }
 Q[1102] = { name = "A Vengeful Fate", d = "RFK", lvl = 34, min = 29, races = 8589934770, share = true, start = { npc = "Auld Stonespire", map = 1456, x = 35.97, y = 59.92 } }
 Q[1109] = { name = "Going, Going, Guano!", d = "RFK", lvl = 33, min = 30, races = 8589934770, next = 1113, share = true, start = { npc = "Master Apothecary Faranell", map = 1458, x = 48.82, y = 69.28 } }
-Q[1113] = { name = "Hearts of Zeal", d = "SM", lvl = 33, min = 30, races = 8589934770, preAny = { 1109 }, share = true, start = { npc = "Master Apothecary Faranell", map = 1458, x = 48.82, y = 69.28 } }
+Q[1113] = { name = "Hearts of Zeal", d = "SM_GY", ds = { "SM_GY", "SM_LIB", "SM_ARM" }, lvl = 33, min = 30, races = 8589934770, preAny = { 1109 }, share = true, start = { npc = "Master Apothecary Faranell", map = 1458, x = 48.82, y = 69.28 } }
 Q[1139] = { name = "The Lost Tablets of Will", d = "ULDA", lvl = 45, min = 35, races = 4294967373, preAny = { 762 }, share = true, start = { npc = "Advisor Belgrum", map = 1455, x = 77.34, y = 9.71 } }
 Q[1142] = { name = "Mortality Wanes", d = "RFK", lvl = 30, min = 25, races = 4294967373, share = true, start = { npc = "Heralath Fallowbrook" } }
 Q[1144] = { name = "Willix the Importer", d = "RFK", lvl = 30, min = 23, start = { npc = "Willix the Importer" } }
@@ -88,14 +94,14 @@ Q[1151] = { name = "Test of Strength", lvl = 30, min = 25, races = 8589934770, p
 Q[1152] = { name = "Test of Lore", lvl = 30, min = 25, races = 8589934770, preAny = { 1151 }, next = 1154, share = true, start = { npc = "Dorn Plainstalker", map = 1441, x = 53.95, y = 41.49 } }
 Q[1154] = { name = "Test of Lore", lvl = 30, min = 25, races = 8589934770, preAny = { 1152 }, next = 6627, share = true, start = { npc = "Braug Dimspirit", map = 1442, x = 78.80, y = 45.69 } }
 Q[1159] = { name = "Test of Lore", lvl = 30, min = 25, races = 8589934770, preAny = { 6627 }, next = 1160, share = true, start = { npc = "Braug Dimspirit", map = 1442, x = 78.80, y = 45.69 } }
-Q[1160] = { name = "Test of Lore", d = "SM", lvl = 36, min = 25, races = 8589934770, preAny = { 1159 }, next = 6628, share = true, start = { npc = "Parqual Fintallas", map = 1458, x = 57.80, y = 65.42 } }
-Q[1193] = { name = "A Broken Trap", d = "DIRE", lvl = 60, min = 56, share = true, start = { object = "Broken Trap" } }
+Q[1160] = { name = "Test of Lore", d = "SM_LIB", lvl = 36, min = 25, races = 8589934770, preAny = { 1159 }, next = 6628, share = true, start = { npc = "Parqual Fintallas", map = 1458, x = 57.80, y = 65.42 } }
+Q[1193] = { name = "A Broken Trap", d = "DIRE_E", lvl = 60, min = 56, share = true, start = { object = "Broken Trap" } }
 Q[1198] = { name = "In Search of Thaelrid", d = "BFD", lvl = 24, min = 18, races = 4294967373, next = 1200, share = true, start = { npc = "Dawnwatcher Shaedlass", map = 1457, x = 55.36, y = 25.03 } }
 Q[1199] = { name = "Twilight Falls", d = "BFD", lvl = 25, min = 20, races = 4294967373, share = true, start = { npc = "Argent Guard Manados", map = 1457, x = 55.24, y = 23.99 } }
 Q[1200] = { name = "Blackfathom Villainy", d = "BFD", lvl = 27, min = 18, races = 4294967373, preAny = { 1198 }, share = true, start = { npc = "Argent Guard Thaelrid" } }
 Q[1221] = { name = "Blueleaf Tubers", d = "RFK", lvl = 26, min = 20, start = { npc = "Mebok Mizzyrix", map = 1413, x = 62.37, y = 37.62 } }
 Q[1275] = { name = "Researching the Corruption", d = "BFD", lvl = 24, min = 18, races = 4294967373, preAny = { 3765 }, share = true, start = { npc = "Gershala Nightwhisper", map = 1439, x = 38.33, y = 43.04 } }
-Q[1318] = { name = "Unfinished Gordok Business", d = "DIRE", lvl = 60, min = 56 }
+Q[1318] = { name = "Unfinished Gordok Business", d = "DIRE_N", lvl = 60, min = 56 }
 Q[1360] = { name = "Reclaimed Treasures", d = "ULDA", lvl = 43, min = 33, races = 4294967373, share = true, start = { npc = "Krom Stoutarm", map = 1455, x = 74.19, y = 9.39 } }
 Q[1424] = { name = "Pool of Tears", lvl = 43, min = 38, races = 8589934770, next = 1429, share = true, start = { npc = "Fel'zerul", map = 1435, x = 47.93, y = 54.78 } }
 Q[1429] = { name = "The Atal'ai Exile", lvl = 44, min = 38, races = 8589934770, preAny = { 1424 }, next = 1444, start = { npc = "Fel'zerul", map = 1435, x = 47.93, y = 54.78 } }
@@ -114,6 +120,10 @@ Q[1487] = { name = "Deviate Eradication", d = "WC", lvl = 21, min = 15, share = 
 Q[1489] = { name = "Hamuul Runetotem", d = "WC", lvl = 16, min = 12, races = 8589934770, preAny = { 880 }, next = 1490, share = true, start = { npc = "Tonga Runetotem", map = 1413, x = 52.26, y = 31.93 } }
 Q[1490] = { name = "Nara Wildmane", d = "WC", lvl = 16, min = 12, races = 8589934770, preAny = { 1489 }, next = 914, share = true, start = { npc = "Arch Druid Hamuul Runetotem", map = 1456, x = 78.62, y = 28.56 } }
 Q[1491] = { name = "Smart Drinks", d = "WC", lvl = 18, min = 13, preAny = { 865 }, share = true, start = { npc = "Mebok Mizzyrix", map = 1413, x = 62.37, y = 37.62 } }
+Q[1947] = { name = "Journey to the Marsh", lvl = 38, min = 30, classes = 128, share = true, start = { npc = "Jennea Cannon", map = 1453, x = 49.56, y = 85.80 } }
+Q[1949] = { name = "Hidden Secrets", lvl = 38, min = 30, classes = 128, preAny = { 1947 }, next = 1950, share = true, start = { npc = "Tabetha", map = 1445, x = 46.06, y = 57.09 } }
+Q[1950] = { name = "Get the Scoop", lvl = 30, min = 30, classes = 128, preAny = { 1949 }, next = 1951, share = true, start = { npc = "Magus Tirth", map = 1441, x = 78.29, y = 75.70 } }
+Q[1951] = { name = "Rituals of Power", d = "SM_LIB", lvl = 40, min = 30, classes = 128, preAny = { 1950 }, share = true, start = { npc = "Magus Tirth", map = 1441, x = 78.29, y = 75.70 } }
 Q[2040] = { name = "Underground Assault", d = "DM", lvl = 20, min = 15, races = 4294967373, share = true, start = { npc = "Shoni the Shilent", map = 1453, x = 62.63, y = 34.11 } }
 Q[2198] = { name = "The Shattered Necklace", d = "ULDA", lvl = 41, min = 37, races = 4294967373, next = 2199, start = { item = "Shattered Necklace" } }
 Q[2199] = { name = "Lore for a Price", d = "ULDA", lvl = 41, min = 37, races = 4294967373, preAny = { 2198 }, next = 2200, share = true, start = { npc = "Talvash del Kissel", map = 1455, x = 36.38, y = 3.61 } }
@@ -255,47 +265,47 @@ Q[4601] = { name = "The Sparklematic 5200!", d = "GNOMER", lvl = 30, min = 25, s
 Q[4602] = { name = "The Sparklematic 5200!", d = "GNOMER", lvl = 30, min = 25, share = true, start = { object = "The Sparklematic 5200" } }
 Q[4605] = { name = "The Sparklematic 5200!", d = "GNOMER", lvl = 30, min = 25, preAny = { 4601 }, share = true, start = { object = "The Sparklematic 5200" } }
 Q[4606] = { name = "The Sparklematic 5200!", d = "GNOMER", lvl = 30, min = 25, preAny = { 4602 }, share = true, start = { object = "The Sparklematic 5200" } }
-Q[4701] = { name = "Put Her Down", d = "BRS", lvl = 59, min = 55, races = 4294967373, share = true, start = { npc = "Helendis Riverhorn", map = 1428, x = 85.82, y = 68.95 } }
-Q[4724] = { name = "The Pack Mistress", d = "BRS", lvl = 59, min = 55, races = 8589934770, share = true, start = { npc = "Galamav the Marksman", map = 1418, x = 5.96, y = 47.73 } }
+Q[4701] = { name = "Put Her Down", d = "LBRS", lvl = 59, min = 55, races = 4294967373, share = true, start = { npc = "Helendis Riverhorn", map = 1428, x = 85.82, y = 68.95 } }
+Q[4724] = { name = "The Pack Mistress", d = "LBRS", lvl = 59, min = 55, races = 8589934770, share = true, start = { npc = "Galamav the Marksman", map = 1418, x = 5.96, y = 47.73 } }
 Q[4726] = { name = "Broodling Essence", lvl = 52, min = 50, next = 4808, start = { npc = "Tinkee Steamboil", map = 1428, x = 65.24, y = 24.00 } }
-Q[4729] = { name = "Kibler's Exotic Pets", d = "BRS", lvl = 59, min = 55, start = { npc = "Kibler", map = 1428, x = 65.89, y = 21.92 } }
-Q[4734] = { name = "Egg Freezing", d = "BRS", lvl = 60, min = 57, preAny = { 4810 }, start = { npc = "Tinkee Steamboil", map = 1428, x = 65.24, y = 24.00 } }
-Q[4735] = { name = "Egg Collection", d = "BRS", lvl = 60, min = 57, preAny = { 4734 }, start = { npc = "Tinkee Steamboil", map = 1428, x = 65.24, y = 24.00 } }
-Q[4742] = { name = "Seal of Ascension", d = "BRS", lvl = 60, min = 57, next = 4743, share = true, start = { npc = "Vaelan" } }
-Q[4743] = { name = "Seal of Ascension", d = "BRS", lvl = 60, min = 57, preAny = { 4742 }, start = { npc = "Vaelan" } }
-Q[4764] = { name = "Doomrigger's Clasp", d = "BRS", lvl = 60, min = 57, races = 4294967373, preAny = { 4766 }, next = 4765, share = true, start = { npc = "Mayara Brightwing", map = 1428, x = 84.84, y = 69.12 } }
-Q[4765] = { name = "Delivery to Ridgewell", d = "BRS", lvl = 60, min = 57, races = 4294967373, preAny = { 4764 }, start = { npc = "Mayara Brightwing", map = 1428, x = 84.84, y = 69.12 } }
-Q[4766] = { name = "Mayara Brightwing", d = "BRS", lvl = 60, min = 57, races = 4294967373, next = 4764, share = true, start = { npc = "Count Remington Ridgewell", map = 1453, x = 76.94, y = 47.83 } }
-Q[4768] = { name = "The Darkstone Tablet", d = "BRS", lvl = 60, min = 57, races = 8589934770, preAny = { 4769 }, share = true, start = { npc = "Shadowmage Vivian Lagrave", map = 1418, x = 2.90, y = 47.76 } }
-Q[4769] = { name = "Vivian Lagrave and the Darkstone Tablet", d = "BRS", lvl = 60, min = 57, races = 8589934770, next = 4768, share = true, start = { npc = "Apothecary Zinge", map = 1458, x = 50.14, y = 67.97 } }
+Q[4729] = { name = "Kibler's Exotic Pets", d = "LBRS", lvl = 59, min = 55, start = { npc = "Kibler", map = 1428, x = 65.89, y = 21.92 } }
+Q[4734] = { name = "Egg Freezing", d = "UBRS", lvl = 60, min = 57, preAny = { 4810 }, start = { npc = "Tinkee Steamboil", map = 1428, x = 65.24, y = 24.00 } }
+Q[4735] = { name = "Egg Collection", d = "UBRS", lvl = 60, min = 57, preAny = { 4734 }, start = { npc = "Tinkee Steamboil", map = 1428, x = 65.24, y = 24.00 } }
+Q[4742] = { name = "Seal of Ascension", d = "LBRS", lvl = 60, min = 57, next = 4743, share = true, start = { npc = "Vaelan" } }
+Q[4743] = { name = "Seal of Ascension", d = "LBRS", lvl = 60, min = 57, preAny = { 4742 }, start = { npc = "Vaelan" } }
+Q[4764] = { name = "Doomrigger's Clasp", d = "UBRS", lvl = 60, min = 57, races = 4294967373, preAny = { 4766 }, next = 4765, share = true, start = { npc = "Mayara Brightwing", map = 1428, x = 84.84, y = 69.12 } }
+Q[4765] = { name = "Delivery to Ridgewell", d = "UBRS", lvl = 60, min = 57, races = 4294967373, preAny = { 4764 }, start = { npc = "Mayara Brightwing", map = 1428, x = 84.84, y = 69.12 } }
+Q[4766] = { name = "Mayara Brightwing", d = "UBRS", lvl = 60, min = 57, races = 4294967373, next = 4764, share = true, start = { npc = "Count Remington Ridgewell", map = 1453, x = 76.94, y = 47.83 } }
+Q[4768] = { name = "The Darkstone Tablet", d = "UBRS", lvl = 60, min = 57, races = 8589934770, preAny = { 4769 }, share = true, start = { npc = "Shadowmage Vivian Lagrave", map = 1418, x = 2.90, y = 47.76 } }
+Q[4769] = { name = "Vivian Lagrave and the Darkstone Tablet", d = "UBRS", lvl = 60, min = 57, races = 8589934770, next = 4768, share = true, start = { npc = "Apothecary Zinge", map = 1458, x = 50.14, y = 67.97 } }
 Q[4771] = { name = "Dawn's Gambit", d = "SCHOLO", lvl = 60, min = 57, preAny = { 5531 }, start = { npc = "Betina Bigglezink", map = 1423, x = 71.66, y = 49.94 } }
 Q[4787] = { name = "The Ancient Egg", lvl = 50, min = 40, preAny = { 3527 }, next = 3528, share = true, start = { npc = "Yeh'kinya", map = 1446, x = 66.99, y = 22.36 } }
-Q[4788] = { name = "The Final Tablets", d = "BRS", lvl = 58, min = 40, preAny = { 5065 }, share = true, start = { npc = "Prospector Ironboot", map = 1446, x = 66.89, y = 24.03 } }
+Q[4788] = { name = "The Final Tablets", d = "LBRS", lvl = 58, min = 40, preAny = { 5065 }, share = true, start = { npc = "Prospector Ironboot", map = 1446, x = 66.89, y = 24.03 } }
 Q[4808] = { name = "Felnok Steelspring", lvl = 54, min = 50, preAny = { 4726 }, next = 4809, start = { npc = "Tinkee Steamboil", map = 1428, x = 65.24, y = 24.00 } }
 Q[4809] = { name = "Chillwind Horns", lvl = 54, min = 50, preAny = { 4808 }, next = 4810, share = true, start = { npc = "Felnok Steelspring", map = 1452, x = 61.63, y = 38.61 } }
 Q[4810] = { name = "Return to Tinkee", lvl = 54, min = 50, preAny = { 4809 }, start = { npc = "Felnok Steelspring", map = 1452, x = 61.63, y = 38.61 } }
-Q[4862] = { name = "En-Ay-Es-Tee-Why", d = "BRS", lvl = 59, min = 55, share = true, start = { npc = "Kibler", map = 1428, x = 65.89, y = 21.92 } }
-Q[4866] = { name = "Mother's Milk", d = "BRS", lvl = 60, min = 55, share = true, start = { npc = "Ragged John", map = 1428, x = 65.01, y = 23.76 } }
-Q[4867] = { name = "Urok Doomhowl", d = "BRS", lvl = 60, min = 55, start = { npc = "Warosh" } }
-Q[4903] = { name = "Warlord's Command", d = "BRS", lvl = 60, min = 55, races = 8589934770, next = 4941, start = { npc = "Warlord Goretooth", map = 1418, x = 5.81, y = 47.52 } }
-Q[4907] = { name = "Tinkee Steamboil", d = "BRS", lvl = 60, min = 57, preAny = { 4810 }, next = 4734, share = true, start = { npc = "Felnok Steelspring", map = 1452, x = 61.63, y = 38.61 } }
+Q[4862] = { name = "En-Ay-Es-Tee-Why", d = "LBRS", lvl = 59, min = 55, share = true, start = { npc = "Kibler", map = 1428, x = 65.89, y = 21.92 } }
+Q[4866] = { name = "Mother's Milk", d = "LBRS", lvl = 60, min = 55, share = true, start = { npc = "Ragged John", map = 1428, x = 65.01, y = 23.76 } }
+Q[4867] = { name = "Urok Doomhowl", d = "LBRS", lvl = 60, min = 55, start = { npc = "Warosh" } }
+Q[4903] = { name = "Warlord's Command", d = "LBRS", lvl = 60, min = 55, races = 8589934770, next = 4941, start = { npc = "Warlord Goretooth", map = 1418, x = 5.81, y = 47.52 } }
+Q[4907] = { name = "Tinkee Steamboil", d = "UBRS", lvl = 60, min = 57, preAny = { 4810 }, next = 4734, share = true, start = { npc = "Felnok Steelspring", map = 1452, x = 61.63, y = 38.61 } }
 Q[4941] = { name = "Eitrigg's Wisdom", lvl = 60, min = 55, races = 8589934770, preAny = { 4903 }, next = 4974, share = true, start = { npc = "Warlord Goretooth", map = 1418, x = 5.81, y = 47.52 } }
-Q[4974] = { name = "For The Horde!", d = "BRS", lvl = 60, min = 55, races = 8589934770, preAny = { 4941 }, share = true, start = { npc = "Thrall", map = 1454, x = 31.73, y = 37.82 } }
-Q[4981] = { name = "Operative Bijou", d = "BRS", lvl = 59, min = 55, races = 8589934770, next = 4982, share = true, start = { npc = "Lexlort", map = 1418, x = 5.88, y = 47.63 } }
-Q[4982] = { name = "Bijou's Belongings", d = "BRS", lvl = 59, min = 55, races = 8589934770, preAny = { 4981 }, next = 4983, share = true, start = { npc = "Bijou" } }
-Q[4983] = { name = "Bijou's Reconnaissance Report", d = "BRS", lvl = 59, min = 55, races = 8589934770, preAny = { 4982 }, start = { npc = "Bijou" } }
-Q[5001] = { name = "Bijou's Belongings", d = "BRS", lvl = 59, min = 55, races = 4294967373, next = 5002, share = true, start = { npc = "Bijou" } }
-Q[5002] = { name = "Message to Maxwell", d = "BRS", lvl = 59, min = 55, races = 4294967373, preAny = { 5001 }, next = 5081, start = { npc = "Bijou" } }
-Q[5047] = { name = "Finkle Einhorn, At Your Service!", d = "BRS", lvl = 60, min = 55, start = { npc = "Finkle Einhorn" } }
+Q[4974] = { name = "For The Horde!", d = "UBRS", lvl = 60, min = 55, races = 8589934770, preAny = { 4941 }, share = true, start = { npc = "Thrall", map = 1454, x = 31.73, y = 37.82 } }
+Q[4981] = { name = "Operative Bijou", d = "LBRS", lvl = 59, min = 55, races = 8589934770, next = 4982, share = true, start = { npc = "Lexlort", map = 1418, x = 5.88, y = 47.63 } }
+Q[4982] = { name = "Bijou's Belongings", d = "LBRS", lvl = 59, min = 55, races = 8589934770, preAny = { 4981 }, next = 4983, share = true, start = { npc = "Bijou" } }
+Q[4983] = { name = "Bijou's Reconnaissance Report", d = "LBRS", lvl = 59, min = 55, races = 8589934770, preAny = { 4982 }, start = { npc = "Bijou" } }
+Q[5001] = { name = "Bijou's Belongings", d = "LBRS", lvl = 59, min = 55, races = 4294967373, next = 5002, share = true, start = { npc = "Bijou" } }
+Q[5002] = { name = "Message to Maxwell", d = "LBRS", lvl = 59, min = 55, races = 4294967373, preAny = { 5001 }, next = 5081, start = { npc = "Bijou" } }
+Q[5047] = { name = "Finkle Einhorn, At Your Service!", d = "UBRS", lvl = 60, min = 55, start = { npc = "Finkle Einhorn" } }
 Q[5065] = { name = "The Lost Tablets of Mosh'aru", lvl = 58, min = 40, preAny = { 3528 }, next = 4788, share = true, start = { npc = "Prospector Ironboot", map = 1446, x = 66.89, y = 24.03 } }
-Q[5081] = { name = "Maxwell's Mission", d = "BRS", lvl = 60, min = 55, races = 4294967373, preAny = { 5002 }, share = true, start = { npc = "Marshal Maxwell", map = 1428, x = 84.74, y = 69.02 } }
-Q[5089] = { name = "General Drakkisath's Command", d = "BRS", lvl = 60, min = 55, races = 4294967373, next = 5102, start = { item = "General Drakkisath's Command" } }
-Q[5102] = { name = "General Drakkisath's Demise", d = "BRS", lvl = 60, min = 55, races = 4294967373, preAny = { 5089 }, share = true, start = { npc = "Marshal Maxwell", map = 1428, x = 84.74, y = 69.02 } }
+Q[5081] = { name = "Maxwell's Mission", d = "LBRS", lvl = 60, min = 55, races = 4294967373, preAny = { 5002 }, share = true, start = { npc = "Marshal Maxwell", map = 1428, x = 84.74, y = 69.02 } }
+Q[5089] = { name = "General Drakkisath's Command", d = "LBRS", lvl = 60, min = 55, races = 4294967373, next = 5102, start = { item = "General Drakkisath's Command" } }
+Q[5102] = { name = "General Drakkisath's Demise", d = "UBRS", lvl = 60, min = 55, races = 4294967373, preAny = { 5089 }, share = true, start = { npc = "Marshal Maxwell", map = 1428, x = 84.74, y = 69.02 } }
 Q[5122] = { name = "The Medallion of Faith", lvl = 60, min = 55, share = true, start = { npc = "Aurius" } }
 Q[5125] = { name = "Aurius' Reckoning", d = "STRAT", lvl = 60, min = 55, preAny = { 5122 }, share = true, start = { npc = "Aurius" } }
 Q[5126] = { name = "Lorax's Tale", lvl = 60, min = 55, share = true, start = { npc = "Lorax", map = 1452, x = 63.79, y = 73.76 } }
-Q[5127] = { name = "The Demon Forge", d = "BRS", lvl = 60, min = 55, preAny = { 5126 }, start = { npc = "Lorax", map = 1452, x = 63.79, y = 73.76 } }
-Q[5160] = { name = "The Matron Protectorate", d = "BRS", lvl = 60, min = 57, next = 5161, start = { npc = "Awbee" } }
+Q[5127] = { name = "The Demon Forge", d = "UBRS", lvl = 60, min = 55, preAny = { 5126 }, start = { npc = "Lorax", map = 1452, x = 63.79, y = 73.76 } }
+Q[5160] = { name = "The Matron Protectorate", d = "UBRS", lvl = 60, min = 57, next = 5161, start = { npc = "Awbee" } }
 Q[5212] = { name = "The Flesh Does Not Lie", d = "STRAT", lvl = 60, min = 55, next = 5213, share = true, start = { npc = "Betina Bigglezink", map = 1423, x = 71.66, y = 49.94 } }
 Q[5213] = { name = "The Active Agent", d = "STRAT", lvl = 60, min = 55, preAny = { 5212 }, share = true, start = { npc = "Betina Bigglezink", map = 1423, x = 71.66, y = 49.94 } }
 Q[5214] = { name = "The Great Fras Siabi", d = "STRAT", lvl = 60, min = 55, share = true, start = { npc = "Smokey LaRue", map = 1423, x = 70.88, y = 48.43 } }
@@ -316,10 +326,12 @@ Q[5464] = { name = "Menethil's Gift", lvl = 60, min = 57, preAny = { 5463 }, nex
 Q[5465] = { name = "Soulbound Keepsake", lvl = 60, min = 57, preAny = { 5464 }, next = 5466, start = { npc = "Leonid Barthalomew the Revered", map = 1423, x = 71.89, y = 48.29 } }
 Q[5466] = { name = "The Lich, Ras Frostwhisper", d = "SCHOLO", lvl = 60, min = 57, preAny = { 5465 }, start = { npc = "Magistrate Marduke", map = 1422, x = 70.57, y = 74.11 } }
 Q[5515] = { name = "Krastinov's Bag of Horrors", d = "SCHOLO", lvl = 60, min = 55, preAny = { 5382 }, next = 5384, share = true, start = { npc = "Eva Sarkhoff", map = 1422, x = 70.22, y = 73.71 } }
-Q[5518] = { name = "The Gordok Ogre Suit", d = "DIRE", lvl = 60, min = 56, share = true, start = { npc = "Knot Thimblejack" } }
+Q[5518] = { name = "The Gordok Ogre Suit", d = "DIRE_N", lvl = 60, min = 56, share = true, start = { npc = "Knot Thimblejack" } }
 Q[5522] = { name = "Leonid Barthalomew", lvl = 60, min = 57, preAny = { 4735 }, next = 5531, start = { npc = "Tinkee Steamboil", map = 1428, x = 65.24, y = 24.00 } }
-Q[5525] = { name = "Free Knot!", d = "DIRE", lvl = 60, min = 57, share = true, start = { npc = "Knot Thimblejack" } }
-Q[5528] = { name = "The Gordok Taste Test", d = "DIRE", lvl = 60, min = 57, share = true, start = { npc = "Stomper Kreeg" } }
+Q[5525] = { name = "Free Knot!", d = "DIRE_N", lvl = 60, min = 57, share = true, start = { npc = "Knot Thimblejack" } }
+Q[5526] = { name = "Shards of the Felvine", d = "DIRE_E", lvl = 60, min = 56, preAny = { 5527 }, start = { npc = "Rabine Saturna", map = 1450, x = 51.69, y = 45.10 } }
+Q[5527] = { name = "A Reliquary of Purity", lvl = 60, min = 56, next = 5526, share = true, start = { npc = "Rabine Saturna", map = 1450, x = 51.69, y = 45.10 } }
+Q[5528] = { name = "The Gordok Taste Test", d = "DIRE_N", lvl = 60, min = 57, share = true, start = { npc = "Stomper Kreeg" } }
 Q[5529] = { name = "Plagued Hatchlings", d = "SCHOLO", lvl = 58, min = 55, share = true, start = { npc = "Betina Bigglezink", map = 1423, x = 71.66, y = 49.94 } }
 Q[5531] = { name = "Betina Bigglezink", d = "SCHOLO", lvl = 60, min = 57, preAny = { 5522 }, next = 4771, start = { npc = "Leonid Barthalomew the Revered", map = 1423, x = 71.89, y = 48.29 } }
 Q[5542] = { name = "Demon Dogs", lvl = 56, min = 52, next = 5742, share = true, start = { npc = "Tirion Fordring", map = 1423, x = 5.16, y = 35.57 } }
@@ -344,7 +356,7 @@ Q[6163] = { name = "Ramstein", d = "STRAT", lvl = 60, min = 56, races = 85899347
 Q[6402] = { name = "Stormwind Rendezvous", lvl = 60, min = 50, races = 4294967373, preAny = { 4322 }, next = 6403, share = true, start = { npc = "Marshal Maxwell", map = 1428, x = 84.74, y = 69.02 } }
 Q[6403] = { name = "The Great Masquerade", lvl = 60, min = 50, races = 4294967373, preAny = { 6402 }, next = 6501, start = { npc = "Reginald Windsor" } }
 Q[6501] = { name = "The Dragon's Eye", lvl = 60, min = 50, races = 4294967373, preAny = { 6403 }, next = 6502, start = { npc = "Highlord Bolvar Fordragon", map = 1453, x = 80.21, y = 38.35 } }
-Q[6502] = { name = "Drakefire Amulet", d = "BRS", lvl = 60, min = 50, races = 4294967373, preAny = { 6501 }, share = true, start = { npc = "Haleh", map = 1452, x = 54.55, y = 51.20 } }
+Q[6502] = { name = "Drakefire Amulet", d = "UBRS", lvl = 60, min = 50, races = 4294967373, preAny = { 6501 }, share = true, start = { npc = "Haleh", map = 1452, x = 54.55, y = 51.20 } }
 Q[6521] = { name = "An Unholy Alliance", d = "RFD", lvl = 36, min = 28, races = 8589934770, preAny = { 6522 }, share = true, start = { npc = "Varimathras", map = 1458, x = 56.25, y = 92.20 } }
 Q[6522] = { name = "An Unholy Alliance", d = "RFD", lvl = 36, min = 28, races = 8589934770, next = 6521, start = { item = "Small Scroll" } }
 Q[6561] = { name = "Blackfathom Villainy", d = "BFD", lvl = 27, min = 18, races = 8589934770, share = true, start = { npc = "Argent Guard Thaelrid" } }
@@ -355,16 +367,19 @@ Q[6565] = { name = "Allegiance to the Old Gods", d = "BFD", lvl = 26, min = 17, 
 Q[6566] = { name = "What the Wind Carries", lvl = 60, min = 55, races = 8589934770, preAny = { 4974 }, next = 6567, share = true, start = { npc = "Thrall", map = 1454, x = 31.73, y = 37.82 } }
 Q[6567] = { name = "The Champion of the Horde", lvl = 60, min = 55, races = 8589934770, preAny = { 6566 }, next = 6568, share = true, start = { npc = "Thrall", map = 1454, x = 31.73, y = 37.82 } }
 Q[6568] = { name = "The Testament of Rexxar", lvl = 60, min = 55, races = 8589934770, preAny = { 6567 }, next = 6569, start = { npc = "Rexxar", map = 1444, x = 46.39, y = 18.24 } }
-Q[6569] = { name = "Oculus Illusions", d = "BRS", lvl = 60, min = 55, races = 8589934770, preAny = { 6568 }, next = 6570, share = true, start = { npc = "Myranda the Hag", map = 1422, x = 50.79, y = 77.85 } }
+Q[6569] = { name = "Oculus Illusions", d = "UBRS", lvl = 60, min = 55, races = 8589934770, preAny = { 6568 }, next = 6570, share = true, start = { npc = "Myranda the Hag", map = 1422, x = 50.79, y = 77.85 } }
 Q[6570] = { name = "Emberstrife", lvl = 60, min = 55, races = 8589934770, preAny = { 6569 }, start = { npc = "Myranda the Hag", map = 1422, x = 50.79, y = 77.85 } }
 Q[6582] = { name = "The Test of Skulls, Scryer", lvl = 60, min = 55, races = 8589934770, preAny = { 6570 }, share = true, start = { npc = "Emberstrife", map = 1445, x = 56.66, y = 87.72 } }
 Q[6583] = { name = "The Test of Skulls, Somnus", lvl = 60, min = 55, races = 8589934770, preAny = { 6570 }, share = true, start = { npc = "Emberstrife", map = 1445, x = 56.66, y = 87.72 } }
 Q[6584] = { name = "The Test of Skulls, Chronalis", lvl = 60, min = 55, races = 8589934770, preAny = { 6570 }, share = true, start = { npc = "Emberstrife", map = 1445, x = 56.66, y = 87.72 } }
 Q[6585] = { name = "The Test of Skulls, Axtroz", lvl = 60, min = 55, races = 8589934770, pre = { 6582, 6583, 6584 }, next = 6601, share = true, start = { npc = "Emberstrife", map = 1445, x = 56.66, y = 87.72 } }
 Q[6601] = { name = "Ascension...", lvl = 60, min = 55, races = 8589934770, preAny = { 6585 }, next = 6602, start = { npc = "Emberstrife", map = 1445, x = 56.66, y = 87.72 } }
-Q[6602] = { name = "Blood of the Black Dragon Champion", d = "BRS", lvl = 60, min = 55, races = 8589934770, preAny = { 6601 }, share = true, start = { npc = "Rexxar", map = 1444, x = 46.39, y = 18.24 } }
+Q[6602] = { name = "Blood of the Black Dragon Champion", d = "UBRS", lvl = 60, min = 55, races = 8589934770, preAny = { 6601 }, share = true, start = { npc = "Rexxar", map = 1444, x = 46.39, y = 18.24 } }
 Q[6626] = { name = "A Host of Evil", d = "RFD", lvl = 35, min = 28, share = true, start = { npc = "Myriam Moonsinger", map = 1413, x = 49.01, y = 94.94 } }
 Q[6627] = { name = "Test of Lore", lvl = 30, min = 25, races = 8589934770, preAny = { 1154 }, next = 1159, share = true, start = { npc = "Braug Dimspirit", map = 1442, x = 78.80, y = 45.69 } }
+Q[6804] = { name = "Poisoned Water", lvl = 56, min = 55, start = { npc = "Duke Hydraxis", map = 1447, x = 79.28, y = 73.70 } }
+Q[6805] = { name = "Stormers and Rumblers", lvl = 57, min = 55, share = true, start = { npc = "Duke Hydraxis", map = 1447, x = 79.28, y = 73.70 } }
+Q[6821] = { name = "Eye of the Emberseer", d = "UBRS", lvl = 60, min = 56, pre = { 6804, 6805 }, next = 6822, share = true, start = { npc = "Duke Hydraxis", map = 1447, x = 79.28, y = 73.70 } }
 Q[6921] = { name = "Amongst the Ruins", d = "BFD", lvl = 27, min = 21, races = 8589934770, share = true, start = { npc = "Je'neu Sancrea", map = 1440, x = 11.56, y = 34.29 } }
 Q[6981] = { name = "The Glowing Shard", d = "WC", lvl = 26, min = 15, start = { item = "Glowing Shard" } }
 Q[7028] = { name = "Twisted Evils", d = "MARA", lvl = 47, min = 41, share = true, start = { npc = "Willow", map = 1443, x = 62.20, y = 39.63 } }
@@ -379,30 +394,30 @@ Q[7067] = { name = "The Pariah's Instructions", d = "MARA", lvl = 48, min = 39, 
 Q[7068] = { name = "Shadowshard Fragments", d = "MARA", lvl = 42, min = 38, races = 8589934770, share = true, start = { npc = "Uthel'nay", map = 1454, x = 39.16, y = 86.27 } }
 Q[7070] = { name = "Shadowshard Fragments", d = "MARA", lvl = 42, min = 38, races = 4294967373, share = true, start = { npc = "Archmage Tervosh", map = 1445, x = 66.42, y = 49.26 } }
 Q[7201] = { name = "The Last Element", d = "BRD", lvl = 54, min = 48, races = 8589934770, share = true, start = { npc = "Shadowmage Vivian Lagrave", map = 1418, x = 2.90, y = 47.76 } }
-Q[7441] = { name = "Pusillin and the Elder Azj'Tordin", d = "DIRE", lvl = 58, min = 54, share = true, start = { npc = "Azj'Tordin", map = 1444, x = 76.91, y = 37.35 } }
-Q[7461] = { name = "The Madness Within", d = "DIRE", lvl = 60, min = 56, next = 7877, share = true, start = { npc = "Shen'dralar Ancient" } }
-Q[7462] = { name = "The Treasure of the Shen'dralar", d = "DIRE", lvl = 60, min = 56, races = 4294967373, preAny = { 7461 }, share = true, start = { npc = "Shen'dralar Ancient" } }
-Q[7463] = { name = "Arcane Refreshment", d = "DIRE", lvl = 60, min = 60, classes = 128, share = true, start = { npc = "Lorekeeper Lydros" } }
-Q[7481] = { name = "Elven Legends", d = "DIRE", lvl = 60, min = 54, races = 8589934770, share = true, start = { npc = "Sage Korolusk", map = 1444, x = 75.24, y = 43.76 } }
-Q[7482] = { name = "Elven Legends", d = "DIRE", lvl = 60, min = 54, races = 4294967373, share = true, start = { npc = "Scholar Runethorn", map = 1444, x = 31.65, y = 43.45 } }
-Q[7488] = { name = "Lethtendris's Web", d = "DIRE", lvl = 57, min = 54, races = 4294967373, preAny = { 7494 }, share = true, start = { npc = "Latronicus Moonspear", map = 1444, x = 30.38, y = 46.17 } }
-Q[7489] = { name = "Lethtendris's Web", d = "DIRE", lvl = 57, min = 54, races = 8589934770, preAny = { 7492 }, share = true, start = { npc = "Talo Thornhoof", map = 1444, x = 76.18, y = 43.83 } }
-Q[7492] = { name = "Camp Mojache", d = "DIRE", lvl = 57, min = 54, races = 8589934770, next = 7489, share = true, start = { npc = "Warcaller Gorlach", map = 1454, x = 37.56, y = 75.36 } }
-Q[7494] = { name = "Feathermoon Stronghold", d = "DIRE", lvl = 57, min = 54, races = 4294967373, next = 7488, share = true, start = { npc = "Crier Goodman", map = 1453, x = 56.39, y = 74.09 } }
-Q[7498] = { name = "Garona: A Study on Stealth and Treachery", d = "DIRE", lvl = 60, min = 54, classes = 8, start = { item = "Garona: A Study on Stealth and Treachery" } }
-Q[7499] = { name = "Codex of Defense", d = "DIRE", lvl = 60, min = 54, classes = 1, start = { item = "Codex of Defense" } }
-Q[7500] = { name = "The Arcanist's Cookbook", d = "DIRE", lvl = 60, min = 54, classes = 128, start = { item = "The Arcanist's Cookbook" } }
-Q[7501] = { name = "The Light and How To Swing It", d = "DIRE", lvl = 60, min = 54, classes = 2, start = { item = "The Light and How to Swing It" } }
-Q[7502] = { name = "Harnessing Shadows", d = "DIRE", lvl = 60, min = 54, classes = 256, start = { item = "Harnessing Shadows" } }
-Q[7503] = { name = "The Greatest Race of Hunters", d = "DIRE", lvl = 60, min = 54, classes = 4, start = { item = "The Greatest Race of Hunters" } }
-Q[7504] = { name = "Holy Bologna: What the Light Won't Tell You", d = "DIRE", lvl = 60, min = 54, classes = 16, start = { item = "Holy Bologna: What the Light Won't Tell You" } }
-Q[7505] = { name = "Frost Shock and You", d = "DIRE", lvl = 60, min = 54, classes = 64, start = { item = "Frost Shock and You" } }
-Q[7506] = { name = "The Emerald Dream...", d = "DIRE", lvl = 60, min = 54, classes = 1024, start = { item = "The Emerald Dream" } }
-Q[7507] = { name = "Foror's Compendium", d = "DIRE", lvl = 60, min = 60, start = { item = "Foror's Compendium of Dragon Slaying" } }
-Q[7508] = { name = "The Forging of Quel'Serrar", d = "DIRE", lvl = 60, min = 60, preAny = { 7507 }, next = 7509, start = { item = "A Dull and Flat Elven Blade" } }
-Q[7703] = { name = "Unfinished Gordok Business", d = "DIRE", lvl = 60, min = 56, start = { npc = "Captain Kromcrush" } }
-Q[7761] = { name = "Blackhand's Command", d = "BRS", lvl = 60, min = 55, start = { item = "Blackhand's Command" } }
-Q[7877] = { name = "The Treasure of the Shen'dralar", d = "DIRE", lvl = 60, min = 56, races = 8589934770, preAny = { 7461 }, share = true, start = { npc = "Shen'dralar Ancient" } }
+Q[7441] = { name = "Pusillin and the Elder Azj'Tordin", d = "DIRE_E", lvl = 58, min = 54, share = true, start = { npc = "Azj'Tordin", map = 1444, x = 76.91, y = 37.35 } }
+Q[7461] = { name = "The Madness Within", d = "DIRE_W", lvl = 60, min = 56, next = 7877, share = true, start = { npc = "Shen'dralar Ancient" } }
+Q[7462] = { name = "The Treasure of the Shen'dralar", d = "DIRE_W", lvl = 60, min = 56, races = 4294967373, preAny = { 7461 }, share = true, start = { npc = "Shen'dralar Ancient" } }
+Q[7463] = { name = "Arcane Refreshment", d = "DIRE_E", lvl = 60, min = 60, classes = 128, share = true, start = { npc = "Lorekeeper Lydros" } }
+Q[7481] = { name = "Elven Legends", d = "DIRE_N", lvl = 60, min = 54, races = 8589934770, share = true, start = { npc = "Sage Korolusk", map = 1444, x = 75.24, y = 43.76 } }
+Q[7482] = { name = "Elven Legends", d = "DIRE_N", lvl = 60, min = 54, races = 4294967373, share = true, start = { npc = "Scholar Runethorn", map = 1444, x = 31.65, y = 43.45 } }
+Q[7488] = { name = "Lethtendris's Web", d = "DIRE_E", lvl = 57, min = 54, races = 4294967373, preAny = { 7494 }, share = true, start = { npc = "Latronicus Moonspear", map = 1444, x = 30.38, y = 46.17 } }
+Q[7489] = { name = "Lethtendris's Web", d = "DIRE_E", lvl = 57, min = 54, races = 8589934770, preAny = { 7492 }, share = true, start = { npc = "Talo Thornhoof", map = 1444, x = 76.18, y = 43.83 } }
+Q[7492] = { name = "Camp Mojache", d = "DIRE_N", lvl = 57, min = 54, races = 8589934770, next = 7489, share = true, start = { npc = "Warcaller Gorlach", map = 1454, x = 37.56, y = 75.36 } }
+Q[7494] = { name = "Feathermoon Stronghold", d = "DIRE_N", lvl = 57, min = 54, races = 4294967373, next = 7488, share = true, start = { npc = "Crier Goodman", map = 1453, x = 56.39, y = 74.09 } }
+Q[7498] = { name = "Garona: A Study on Stealth and Treachery", d = "DIRE_E", ds = { "DIRE_E", "DIRE_N", "DIRE_W" }, lvl = 60, min = 54, classes = 8, start = { item = "Garona: A Study on Stealth and Treachery" } }
+Q[7499] = { name = "Codex of Defense", d = "DIRE_E", ds = { "DIRE_E", "DIRE_N", "DIRE_W" }, lvl = 60, min = 54, classes = 1, start = { item = "Codex of Defense" } }
+Q[7500] = { name = "The Arcanist's Cookbook", d = "DIRE_E", ds = { "DIRE_E", "DIRE_N", "DIRE_W" }, lvl = 60, min = 54, classes = 128, start = { item = "The Arcanist's Cookbook" } }
+Q[7501] = { name = "The Light and How To Swing It", d = "DIRE_E", ds = { "DIRE_E", "DIRE_N", "DIRE_W" }, lvl = 60, min = 54, classes = 2, start = { item = "The Light and How to Swing It" } }
+Q[7502] = { name = "Harnessing Shadows", d = "DIRE_E", ds = { "DIRE_E", "DIRE_N", "DIRE_W" }, lvl = 60, min = 54, classes = 256, start = { item = "Harnessing Shadows" } }
+Q[7503] = { name = "The Greatest Race of Hunters", d = "DIRE_E", ds = { "DIRE_E", "DIRE_N", "DIRE_W" }, lvl = 60, min = 54, classes = 4, start = { item = "The Greatest Race of Hunters" } }
+Q[7504] = { name = "Holy Bologna: What the Light Won't Tell You", d = "DIRE_E", ds = { "DIRE_E", "DIRE_N", "DIRE_W" }, lvl = 60, min = 54, classes = 16, start = { item = "Holy Bologna: What the Light Won't Tell You" } }
+Q[7505] = { name = "Frost Shock and You", d = "DIRE_E", ds = { "DIRE_E", "DIRE_N", "DIRE_W" }, lvl = 60, min = 54, classes = 64, start = { item = "Frost Shock and You" } }
+Q[7506] = { name = "The Emerald Dream...", d = "DIRE_E", ds = { "DIRE_E", "DIRE_N", "DIRE_W" }, lvl = 60, min = 54, classes = 1024, start = { item = "The Emerald Dream" } }
+Q[7507] = { name = "Foror's Compendium", d = "DIRE_W", lvl = 60, min = 60, start = { item = "Foror's Compendium of Dragon Slaying" } }
+Q[7508] = { name = "The Forging of Quel'Serrar", d = "DIRE_W", lvl = 60, min = 60, preAny = { 7507 }, next = 7509, start = { item = "A Dull and Flat Elven Blade" } }
+Q[7703] = { name = "Unfinished Gordok Business", d = "DIRE_N", lvl = 60, min = 56, start = { npc = "Captain Kromcrush" } }
+Q[7761] = { name = "Blackhand's Command", d = "UBRS", lvl = 60, min = 55, start = { item = "Blackhand's Command" } }
+Q[7877] = { name = "The Treasure of the Shen'dralar", d = "DIRE_W", lvl = 60, min = 56, races = 8589934770, preAny = { 7461 }, share = true, start = { npc = "Shen'dralar Ancient" } }
 Q[8733] = { name = "Eranikus, Tyrant of the Dream", d = "ST", lvl = 60, min = 60, next = 8734, start = { npc = "Malfurion Stormrage" } }
 Q[8905] = { name = "An Earnest Proposition", lvl = 60, min = 58, races = 4294967373, classes = 1024, share = true, start = { npc = "Deliana", map = 1455, x = 43.53, y = 52.64 } }
 Q[8906] = { name = "An Earnest Proposition", lvl = 60, min = 58, races = 4294967373, classes = 4, share = true, start = { npc = "Deliana", map = 1455, x = 43.53, y = 52.64 } }
@@ -447,9 +462,9 @@ Q[8944] = { name = "Just Compensation", lvl = 60, min = 58, races = 8589934770, 
 Q[8945] = { name = "Dead Man's Plea", d = "STRAT", lvl = 60, min = 58, preAny = { 8929, 8930 }, next = 8946, share = true, start = { npc = "Anthion Harmon", map = 1423, x = 26.11, y = 11.30 } }
 Q[8946] = { name = "Proof of Life", lvl = 60, min = 58, preAny = { 8945 }, next = 8947, start = { npc = "Ysida Harmon" } }
 Q[8947] = { name = "Anthion's Strange Request", lvl = 60, min = 58, preAny = { 8946 }, next = 8948, share = true, start = { npc = "Anthion Harmon", map = 1423, x = 26.11, y = 11.30 } }
-Q[8948] = { name = "Anthion's Old Friend", d = "DIRE", lvl = 60, min = 58, preAny = { 8947 }, next = 8949, start = { npc = "Anthion Harmon", map = 1423, x = 26.11, y = 11.30 } }
-Q[8949] = { name = "Falrin's Vendetta", d = "DIRE", lvl = 60, min = 58, preAny = { 8948 }, next = 8950, share = true, start = { npc = "Falrin Treeshaper" } }
-Q[8950] = { name = "The Instigator's Enchantment", d = "DIRE", lvl = 60, min = 58, preAny = { 8949 }, share = true, start = { npc = "Falrin Treeshaper" } }
+Q[8948] = { name = "Anthion's Old Friend", d = "DIRE_W", lvl = 60, min = 58, preAny = { 8947 }, next = 8949, start = { npc = "Anthion Harmon", map = 1423, x = 26.11, y = 11.30 } }
+Q[8949] = { name = "Falrin's Vendetta", d = "DIRE_W", lvl = 60, min = 58, preAny = { 8948 }, next = 8950, share = true, start = { npc = "Falrin Treeshaper" } }
+Q[8950] = { name = "The Instigator's Enchantment", d = "DIRE_W", lvl = 60, min = 58, preAny = { 8949 }, share = true, start = { npc = "Falrin Treeshaper" } }
 Q[8951] = { name = "Anthion's Parting Words", lvl = 60, min = 58, races = 4294967373, classes = 1024, preAny = { 9015 }, next = 8960, start = { npc = "Anthion Harmon", map = 1423, x = 26.11, y = 11.30 } }
 Q[8952] = { name = "Anthion's Parting Words", lvl = 60, min = 58, races = 4294967373, classes = 4, preAny = { 9015 }, next = 8960, start = { npc = "Anthion Harmon", map = 1423, x = 26.11, y = 11.30 } }
 Q[8953] = { name = "Anthion's Parting Words", lvl = 60, min = 58, races = 4294967373, classes = 128, preAny = { 9015 }, next = 8960, start = { npc = "Anthion Harmon", map = 1423, x = 26.11, y = 11.30 } }
@@ -465,8 +480,8 @@ Q[8962] = { name = "Components of Importance", lvl = 60, min = 58, preAny = { 89
 Q[8963] = { name = "Components of Importance", lvl = 60, min = 58, preAny = { 8961 }, excl = { 8962, 8964, 8965 }, next = 8967, share = true, start = { npc = "Bodley" } }
 Q[8964] = { name = "Components of Importance", lvl = 60, min = 58, preAny = { 8961 }, excl = { 8962, 8963, 8965 }, next = 8968, share = true, start = { npc = "Bodley" } }
 Q[8965] = { name = "Components of Importance", lvl = 60, min = 58, preAny = { 8961 }, excl = { 8962, 8963, 8964 }, next = 8969, share = true, start = { npc = "Bodley" } }
-Q[8966] = { name = "The Left Piece of Lord Valthalak's Amulet", d = "BRS", lvl = 60, min = 58, preAny = { 8962 }, next = 8970, start = { npc = "Bodley" } }
-Q[8967] = { name = "The Left Piece of Lord Valthalak's Amulet", d = "DIRE", lvl = 60, min = 58, preAny = { 8963 }, next = 8970, start = { npc = "Bodley" } }
+Q[8966] = { name = "The Left Piece of Lord Valthalak's Amulet", d = "LBRS", lvl = 60, min = 58, preAny = { 8962 }, next = 8970, start = { npc = "Bodley" } }
+Q[8967] = { name = "The Left Piece of Lord Valthalak's Amulet", d = "DIRE_E", lvl = 60, min = 58, preAny = { 8963 }, next = 8970, start = { npc = "Bodley" } }
 Q[8968] = { name = "The Left Piece of Lord Valthalak's Amulet", d = "STRAT", lvl = 60, min = 58, preAny = { 8964 }, next = 8970, start = { npc = "Bodley" } }
 Q[8969] = { name = "The Left Piece of Lord Valthalak's Amulet", d = "SCHOLO", lvl = 60, min = 58, preAny = { 8965 }, next = 8970, start = { npc = "Bodley" } }
 Q[8970] = { name = "I See Alcaz Island In Your Future...", lvl = 60, min = 58, preAny = { 8966, 8967, 8968, 8969 }, start = { npc = "Bodley" } }
@@ -476,12 +491,12 @@ Q[8985] = { name = "More Components of Importance", lvl = 60, min = 58, preAny =
 Q[8986] = { name = "More Components of Importance", lvl = 60, min = 58, preAny = { 8965, 8970 }, next = 8989, share = true, start = { npc = "Bodley" } }
 Q[8987] = { name = "More Components of Importance", lvl = 60, min = 58, preAny = { 8962, 8970 }, next = 8991, share = true, start = { npc = "Bodley" } }
 Q[8988] = { name = "More Components of Importance", lvl = 60, min = 58, preAny = { 8963, 8970 }, next = 8992, share = true, start = { npc = "Bodley" } }
-Q[8989] = { name = "The Right Piece of Lord Valthalak's Amulet", d = "BRS", lvl = 60, min = 58, preAny = { 8986 }, next = 8994, start = { npc = "Bodley" } }
-Q[8990] = { name = "The Right Piece of Lord Valthalak's Amulet", d = "DIRE", lvl = 60, min = 58, preAny = { 8985 }, next = 8994, start = { npc = "Bodley" } }
+Q[8989] = { name = "The Right Piece of Lord Valthalak's Amulet", d = "LBRS", lvl = 60, min = 58, preAny = { 8986 }, next = 8994, start = { npc = "Bodley" } }
+Q[8990] = { name = "The Right Piece of Lord Valthalak's Amulet", d = "DIRE_E", lvl = 60, min = 58, preAny = { 8985 }, next = 8994, start = { npc = "Bodley" } }
 Q[8991] = { name = "The Right Piece of Lord Valthalak's Amulet", d = "STRAT", lvl = 60, min = 58, preAny = { 8987 }, next = 8994, start = { npc = "Bodley" } }
 Q[8992] = { name = "The Right Piece of Lord Valthalak's Amulet", d = "SCHOLO", lvl = 60, min = 58, preAny = { 8988 }, next = 8994, start = { npc = "Bodley" } }
 Q[8994] = { name = "Final Preparations", lvl = 60, min = 58, preAny = { 8989, 8990, 8991, 8992 }, next = 8995, start = { npc = "Bodley" } }
-Q[8995] = { name = "Mea Culpa, Lord Valthalak", d = "BRS", lvl = 60, min = 58, preAny = { 8994 }, next = 8996, start = { npc = "Bodley" } }
+Q[8995] = { name = "Mea Culpa, Lord Valthalak", d = "UBRS", lvl = 60, min = 58, preAny = { 8994 }, next = 8996, start = { npc = "Bodley" } }
 Q[9015] = { name = "The Challenge", d = "BRD", lvl = 60, min = 58, preAny = { 8950 }, start = { npc = "Falrin Treeshaper" } }
 Q[9016] = { name = "Anthion's Parting Words", lvl = 60, min = 58, races = 8589934770, classes = 1024, preAny = { 9015 }, next = 9032, start = { npc = "Anthion Harmon", map = 1423, x = 26.11, y = 11.30 } }
 Q[9017] = { name = "Anthion's Parting Words", lvl = 60, min = 58, races = 8589934770, classes = 4, preAny = { 9015 }, next = 9032, start = { npc = "Anthion Harmon", map = 1423, x = 26.11, y = 11.30 } }

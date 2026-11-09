@@ -37,6 +37,88 @@ DUNGEONS = [
     ("SCHOLO", "Scholomance",        58, 60, [2057, 10011, 10012, 10013]),
 ]
 
+# Dungeons split into wings: parent key -> (key, display name, min, max). The parent is only
+# used to match zoneOrSort; the wings are what the addon shows.
+SPLITS = {
+    "SM": [
+        ("SM_GY",   "Scarlet Monastery: Graveyard", 30, 38),
+        ("SM_LIB",  "Scarlet Monastery: Library",   33, 41),
+        ("SM_ARM",  "Scarlet Monastery: Armory",    36, 44),
+        ("SM_CATH", "Scarlet Monastery: Cathedral", 38, 46),
+    ],
+    "BRS": [
+        ("LBRS", "Lower Blackrock Spire", 57, 60),
+        ("UBRS", "Upper Blackrock Spire", 60, 60),
+    ],
+    "DIRE": [
+        ("DIRE_E", "Dire Maul East - Warpwood Quarter", 58, 60),
+        ("DIRE_N", "Dire Maul North - Gordok Commons",  60, 60),
+        ("DIRE_W", "Dire Maul West - Capital Gardens",  60, 60),
+    ],
+}
+
+# Which wing(s) a quest belongs to (from Wowhead's WoW Forever dungeon guides, 2026-11-09).
+# Also used to pull in quests whose zoneOrSort isn't the dungeon (e.g. class quests).
+QUEST_DUNGEONS = {
+    1048: ["SM_GY", "SM_LIB", "SM_ARM", "SM_CATH"],  # Into The Scarlet Monastery
+    1049: ["SM_LIB"],                                 # Compendium of the Fallen
+    1050: ["SM_LIB"],                                 # Mythology of the Titans
+    1051: ["SM_GY"],                                  # Vorrel's Revenge
+    1053: ["SM_GY", "SM_LIB", "SM_ARM", "SM_CATH"],  # In the Name of the Light
+    1113: ["SM_GY", "SM_LIB", "SM_ARM"],             # Hearts of Zeal
+    1160: ["SM_LIB"],                                 # Test of Lore
+    1951: ["SM_LIB"],                                 # Rituals of Power (Mage)
+
+    # Lower Blackrock Spire (Wowhead guide)
+    4724: ["LBRS"], 4981: ["LBRS"], 4903: ["LBRS"], 4701: ["LBRS"], 5089: ["LBRS"], 5001: ["LBRS"],
+    4862: ["LBRS"], 4729: ["LBRS"], 4866: ["LBRS"], 4742: ["LBRS"], 4867: ["LBRS"], 4788: ["LBRS"],
+    # Lower Blackrock Spire (not in the guide - same chain/place as a guide quest)
+    4743: ["LBRS"],  # Seal of Ascension (2nd version, Vaelan in LBRS)
+    4982: ["LBRS"],  # Bijou's Belongings (other faction version)
+    4983: ["LBRS"],  # Bijou's Reconnaissance Report
+    5002: ["LBRS"],  # Message to Maxwell
+    5081: ["LBRS"],  # Maxwell's Mission (Alliance counterpart of Warlord's Command)
+    8966: ["LBRS"],  # Left Piece of Lord Valthalak's Amulet (Mor Grayhoof)
+    8989: ["LBRS"],  # Right Piece of Lord Valthalak's Amulet (Mor Grayhoof)
+
+    # Upper Blackrock Spire (Wowhead guide)
+    4768: ["UBRS"], 4974: ["UBRS"], 6602: ["UBRS"], 4764: ["UBRS"], 5102: ["UBRS"], 6502: ["UBRS"],
+    7761: ["UBRS"], 5160: ["UBRS"], 5047: ["UBRS"], 4735: ["UBRS"], 6821: ["UBRS"], 5127: ["UBRS"],
+    # Upper Blackrock Spire (not in the guide)
+    4734: ["UBRS"],  # Egg Freezing (Tinkee chain)
+    4907: ["UBRS"],  # Tinkee Steamboil (Tinkee chain)
+    4765: ["UBRS"],  # Delivery to Ridgewell (after Doomrigger's Clasp)
+    4766: ["UBRS"],  # Mayara Brightwing (breadcrumb to Doomrigger's Clasp)
+    4769: ["UBRS"],  # Vivian Lagrave and the Darkstone Tablet (breadcrumb)
+    6569: ["UBRS"],  # Oculus Illusions (Onyxia chain)
+    8995: ["UBRS"],  # Mea Culpa, Lord Valthalak (summoned in UBRS)
+
+    # Dire Maul North - Gordok Commons (Wowhead guide)
+    7481: ["DIRE_N"], 7482: ["DIRE_N"], 5525: ["DIRE_N"], 5518: ["DIRE_N"], 5528: ["DIRE_N"], 7703: ["DIRE_N"],
+    1318: ["DIRE_N"],  # Unfinished Gordok Business (older ID)
+    7492: ["DIRE_N"],  # Camp Mojache (follows Elven Legends)
+    7494: ["DIRE_N"],  # Feathermoon Stronghold (follows Elven Legends)
+
+    # Dire Maul East - Warpwood Quarter (Wowhead guide)
+    7489: ["DIRE_E"], 7488: ["DIRE_E"], 7441: ["DIRE_E"], 5526: ["DIRE_E"], 7463: ["DIRE_E"],
+    1193: ["DIRE_E"],  # A Broken Trap
+    8967: ["DIRE_E"],  # Left Piece of Lord Valthalak's Amulet (Isalien)
+    8990: ["DIRE_E"],  # Right Piece of Lord Valthalak's Amulet (Isalien)
+
+    # Dire Maul West - Capital Gardens (Wowhead guide)
+    7461: ["DIRE_W"], 7507: ["DIRE_W"],
+    7462: ["DIRE_W"],  # The Treasure of the Shen'dralar
+    7877: ["DIRE_W"],  # The Treasure of the Shen'dralar
+    7508: ["DIRE_W"],  # The Forging of Quel'Serrar
+    8948: ["DIRE_W"],  # Anthion's Old Friend
+    8949: ["DIRE_W"],  # Falrin's Vendetta
+    8950: ["DIRE_W"],  # The Instigator's Enchantment
+    # Class book quests: books drop from bosses in every wing
+    7498: ["DIRE_E", "DIRE_N", "DIRE_W"], 7499: ["DIRE_E", "DIRE_N", "DIRE_W"], 7500: ["DIRE_E", "DIRE_N", "DIRE_W"],
+    7501: ["DIRE_E", "DIRE_N", "DIRE_W"], 7502: ["DIRE_E", "DIRE_N", "DIRE_W"], 7503: ["DIRE_E", "DIRE_N", "DIRE_W"],
+    7504: ["DIRE_E", "DIRE_N", "DIRE_W"], 7505: ["DIRE_E", "DIRE_N", "DIRE_W"], 7506: ["DIRE_E", "DIRE_N", "DIRE_W"],
+}
+
 QUEST_FLAG_SHARABLE = 8
 SPECIAL_FLAG_REPEATABLE = 1
 
@@ -148,12 +230,22 @@ def main(qdb_root: Path, addon_root: Path):
             return {"item": item[1] if item else "Item %d" % item_id}
         return None
 
-    def build_entry(qid, dungeon_key):
+    def dungeon_keys(qid, zone_key):
+        if int(qid) in QUEST_DUNGEONS:
+            return QUEST_DUNGEONS[int(qid)]
+        if zone_key in SPLITS:
+            print("  WARNING: quest %d has no wing mapping - listed in every %s wing" % (qid, zone_key))
+            return [w[0] for w in SPLITS[zone_key]]
+        return [zone_key] if zone_key else []
+
+    def build_entry(qid, zone_key):
         q = quests[qid]
         flags = q[K_QFLAGS] or 0
+        keys = dungeon_keys(qid, zone_key)
         entry = {
             "name": q[K_NAME],
-            "d": dungeon_key,
+            "d": keys[0] if keys else None,
+            "ds": keys if len(keys) > 1 else None,
             "lvl": q[K_QLVL],
             "min": q[K_REQLVL],
             "races": q[K_RACES],
@@ -179,6 +271,9 @@ def main(qdb_root: Path, addon_root: Path):
         if (q[K_SFLAGS] or 0) & SPECIAL_FLAG_REPEATABLE:
             continue
         selected[int(qid)] = build_entry(qid, area_to_key[zone])
+    for qid in QUEST_DUNGEONS:
+        if qid not in selected and quests[qid] is not None:
+            selected[qid] = build_entry(qid, None)
 
     # Pull in every prerequisite chain (non-dungeon helper quests) so the map can locate them.
     queue = list(selected.keys())
@@ -202,28 +297,30 @@ def main(qdb_root: Path, addon_root: Path):
     out.append("local _, ns = ...")
     out.append("local D, Q = ns.Data.Dungeons, ns.Data.Quests")
     out.append("")
-    for order, (key, name, lo, hi, _) in enumerate(DUNGEONS, start=1):
+    for key, name, lo, hi, _ in DUNGEONS:
         ent = entrances[key]
         ent_s = "{ map = %d, x = %.2f, y = %.2f }" % (ent["map"], ent["x"], ent["y"]) if ent else "nil"
-        out.append('D.%s = { name = %s, min = %d, max = %d, entrance = %s, isNew = false }'
-                   % (key, lua_str(name), lo, hi, ent_s))
+        for wkey, wname, wlo, whi in SPLITS.get(key, [(key, name, lo, hi)]):
+            out.append('D.%s = { name = %s, min = %d, max = %d, entrance = %s, isNew = false }'
+                       % (wkey, lua_str(wname), wlo, whi, ent_s))
     out.append("")
 
     dungeon_count = {}
     for qid in sorted(selected):
         e = selected[qid]
-        if e["d"]:
-            dungeon_count[e["d"]] = dungeon_count.get(e["d"], 0) + 1
+        for k in (e["ds"] or ([e["d"]] if e["d"] else [])):
+            dungeon_count[k] = dungeon_count.get(k, 0) + 1
         out.append("Q[%d] = %s" % (qid, lua_entry(e)))
 
     target = addon_root / "Data" / "Classic.lua"
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text("\n".join(out) + "\n", encoding="utf-8")
 
-    total = sum(dungeon_count.values())
+    total = sum(1 for e in selected.values() if e["d"])
     print("Wrote %s: %d dungeon quests, %d helper (prereq) quests" % (target, total, len(selected) - total))
     for key, *_ in DUNGEONS:
-        print("  %-7s %d" % (key, dungeon_count.get(key, 0)))
+        for wkey, *_ in SPLITS.get(key, [(key,)]):
+            print("  %-8s %d" % (wkey, dungeon_count.get(wkey, 0)))
 
 
 def lua_str(s):
@@ -234,6 +331,8 @@ def lua_entry(e):
     parts = ["name = %s" % lua_str(e["name"])]
     if e["d"]:
         parts.append('d = "%s"' % e["d"])
+    if e["ds"]:
+        parts.append("ds = { %s }" % ", ".join('"%s"' % k for k in e["ds"]))
     parts.append("lvl = %d" % (e["lvl"] or 0))
     parts.append("min = %d" % (e["min"] or 1))
     if e["races"]:

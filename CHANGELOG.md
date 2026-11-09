@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.1 (2026-11-09)
+
+- Scarlet Monastery is split into its four wings (Graveyard, Library, Armory, Cathedral). Quests that span several wings are listed under each of them.
+- Blackrock Spire is split into Lower and Upper, and Dire Maul into North (Gordok Commons), East (Warpwood Quarter) and West (Capital Gardens).
+- Added Eye of the Emberseer (UBRS) and Shards of the Felvine (Dire Maul East).
+- Added Rituals of Power (Mage, SM: Library) and moved Past Due to SM: Library with its quest giver (Magus Olvek, Alterac Mountains).
+- Ruins of Lordaeron / Excavation Site quests that start inside the dungeon now show `[INSIDE]` instead of the red `!`.
+
 ## 1.0.0 (2026-11-09)
 
 First release.

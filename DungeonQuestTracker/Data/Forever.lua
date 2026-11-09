@@ -52,14 +52,14 @@ Q[98423] = { name = "The Treaty of Understanding", d = "THANES", min = 9, factio
 
 -- Ruins of Lordaeron
 Q[92401] = { name = "A Frightened Request",     d = "LORDAERON", lvl = 22, min = 15, faction = "H", share = true, start = { npc = "Tabitha Heartweaver", map = 1421, x = 44.4, y = 42.8 } }
-Q[92415] = { name = "Remember That I Love You", d = "LORDAERON", lvl = 22, min = 15, faction = "A" }
+Q[92415] = { name = "Remember That I Love You", d = "LORDAERON", lvl = 22, min = 15, faction = "A", inside = true } -- Graveyard deep inside, at one of the bosses
 Q[92421] = { name = "Light's Justice",          d = "LORDAERON", lvl = 22, min = 15, faction = "H", share = true, start = { npc = "Morbin Lightbane", map = 1458, x = 57.4, y = 90.4 } }
 Q[92422] = { name = "The Wrath of Rath'mael",   d = "LORDAERON", lvl = 22, min = 15, faction = "H", share = true, start = { npc = "Deathguard Kristof", map = 1420, x = 63.9, y = 61.4 } }
-Q[95189] = { name = "Crest of Lordaeron",       d = "LORDAERON", lvl = 22, min = 15, faction = "A" }
-Q[95195] = { name = "Bloodied Insignia",        d = "LORDAERON", lvl = 22, min = 15, faction = "A" }
+Q[95189] = { name = "Crest of Lordaeron",       d = "LORDAERON", lvl = 22, min = 15, faction = "A", inside = true } -- interact with a shield in the instance
+Q[95195] = { name = "Bloodied Insignia",        d = "LORDAERON", lvl = 22, min = 15, faction = "A", inside = true } -- quest-starting item looted in the instance
 Q[95204] = { name = "Crest of Lordaeron",       d = "LORDAERON", lvl = 22, min = 15, faction = "H" }
 Q[95216] = { name = "The New Plague",           d = "LORDAERON", lvl = 22, min = 15, faction = "H", share = true, start = { npc = "Theodore Griffs", map = 1458, x = 46.2, y = 70.4 } }
-Q[95250] = { name = "Abominable Creatures",     d = "LORDAERON", lvl = 21, min = 15, faction = "A", share = true }
+Q[95250] = { name = "Abominable Creatures",     d = "LORDAERON", lvl = 21, min = 15, faction = "A", share = true, inside = true } -- confirmed in game
 Q[97288] = { name = "Unending Torment",         d = "LORDAERON", lvl = 21, min = 15, faction = "H" }
 
 -- Excavation Site: Wetlands
@@ -73,7 +73,7 @@ Q[95737] = { name = "Seeking Caitlin",            d = "EXCAVATION", lvl = 31, mi
 Q[95772] = { name = "Songblade Search",           d = "EXCAVATION", lvl = 31, min = 24, faction = "A", share = true, start = { npc = "Dorin Songblade", map = 1433, x = 25.6, y = 46.4 } }
 Q[95795] = { name = "Fallen in the Fen",          d = "EXCAVATION", lvl = 31, min = 24, faction = "A", share = true }
 Q[95809] = { name = "Heartwoven",                 d = "EXCAVATION", lvl = 31, min = 24, faction = "A", pre = { 95647 } }
-Q[95810] = { name = "Lost Relic Carry",           d = "EXCAVATION", lvl = 31, min = 24, faction = "A" }
+Q[95810] = { name = "Lost Relic Carry",           d = "EXCAVATION", lvl = 31, min = 24, faction = "A", inside = true } -- loot from the last boss
 Q[98815] = { name = "Highland Hides",             d = "EXCAVATION", lvl = 28, min = 24, faction = "A", share = true, start = { npc = "James Halloran", map = 1437, x = 8.4, y = 55.8 } }
 Q[98823] = { name = "Earthen Echo",               d = "EXCAVATION", lvl = 31, min = 24, faction = "H", pre = { 95664 }, start = { npc = "Bashana Runetotem", map = 1456, x = 70.2, y = 33.6 } }
 Q[98824] = { name = "Prehistoric Prism",          d = "EXCAVATION", lvl = 31, min = 24, faction = "A", pre = { 95810 }, start = { npc = "Prospector Whelgar", map = 1437, x = 38.8, y = 52.2 } }
@@ -88,7 +88,7 @@ Q[92457] = { name = "Starving Arcane",     d = "DALARAN", lvl = 33, min = 24, fa
 Q[92458] = { name = "Heart of Disruption", d = "DALARAN", lvl = 33, min = 24, faction = "A", pre = { 92432 }, start = { npc = "Image of Archmage Modera", map = 1421, x = 68.4, y = 45.2 } }
 Q[92489] = { name = "Power Overwhelming",  d = "DALARAN", lvl = 33, min = 24, faction = "A", share = true, start = { npc = "High Sorcerer Andromath", map = 1453, x = 37.6, y = 81.6 } }
 Q[96984] = { name = "Heart of Disruption", d = "DALARAN", lvl = 33, min = 24, faction = "H", pre = { 92434 }, start = { npc = "Image of Archmage Modera", map = 1421, x = 68.4, y = 45.2 } }
-Q[96800] = { name = "Past Due",            d = "DALARAN", faction = "A" }
+
 Q[96986] = { name = "The Grave Knight",        d = "DALARAN", lvl = 33, min = 24, faction = "H", share = true, start = { npc = "Melisara", map = 1424, x = 62.4, y = 20.4 } }
 Q[96987] = { name = "Opportunistic Education", d = "DALARAN", lvl = 33, min = 24, faction = "H", share = true }
 Q[96988] = { name = "Source of Power",         d = "DALARAN", lvl = 33, min = 24, faction = "H", share = true, start = { npc = "Doctor Martin Felben", map = 1458, x = 45.8, y = 73.2 } }
@@ -123,3 +123,6 @@ Q[92344] = { name = "Get to the Roots of It", d = "BLACKMAW", lvl = 55, min = 45
 Q[97198] = { name = "Blackmaw Magic",         d = "BLACKMAW", lvl = 59, min = 52, faction = "H", share = true }
 
 -- Shaper's Terrace: Wowhead lists no quests yet.
+
+-- Forever quest for a classic dungeon (Scarlet Monastery: Library)
+Q[96800] = { name = "Past Due", d = "SM_LIB", min = 30, faction = "A", share = true, start = { npc = "Magus Olvek", map = 1416, x = 10.0, y = 63.8 } }

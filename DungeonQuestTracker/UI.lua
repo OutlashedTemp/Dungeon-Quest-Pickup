@@ -43,8 +43,10 @@ function UI.ShowQuestTooltip(owner, id)
             table.insert(dungeons, d.name)
         end
     end
-    addDungeon(q.d)
-    for _, depId in ipairs(dependents) do addDungeon(ns.Data.Quests[depId].d) end
+    for _, key in ipairs(ns.Engine.DungeonsOf(q)) do addDungeon(key) end
+    for _, depId in ipairs(dependents) do
+        for _, key in ipairs(ns.Engine.DungeonsOf(ns.Data.Quests[depId])) do addDungeon(key) end
+    end
     if #dungeons > 0 then
         GameTooltip:AddLine("Dungeon: |cffffffff" .. table.concat(dungeons, ", ") .. "|r", 0.945, 0.349, 0.165)
     end
@@ -222,11 +224,15 @@ end
 local function BuildEntries()
     local entries = {}
     local counts = { ACTIVE = 0, AVAILABLE = 0, PREREQ = 0, LEVEL = 0 }
+    local counted = {} -- quests listed under several dungeons count once
     for _, dungeon in ipairs(ns.Engine.GetDungeonList()) do
         local collapsed = ns.db.collapsed[dungeon.key]
         table.insert(entries, { type = "dungeon", key = dungeon.key, def = dungeon.def, n = #dungeon.quests, collapsed = collapsed })
         for _, item in ipairs(dungeon.quests) do
-            counts[item.status] = counts[item.status] + 1
+            if not counted[item.id] then
+                counted[item.id] = true
+                counts[item.status] = counts[item.status] + 1
+            end
             if not collapsed then
                 table.insert(entries, { type = "quest", id = item.id, q = item.q, status = item.status })
             end
