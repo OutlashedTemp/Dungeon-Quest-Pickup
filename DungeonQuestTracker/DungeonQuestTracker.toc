@@ -1,0 +1,21 @@
+## Interface: 16001
+## Title: |cffF1592ADungeon Quest Tracker|r
+## Notes: Lists every dungeon quest for your faction, color coded by status, with world map pins.
+## Author: CrownedFoxxy
+## Version: 1.0.0
+## Category: Quests
+## X-License: GPL-3.0
+## SavedVariables: DQT_DB
+## SavedVariablesPerCharacter: DQT_CharDB
+## IconTexture: Interface\Icons\INV_Misc_Map_01
+## AddonCompartmentFunc: DQT_OnAddonCompartmentClick
+
+Core.lua
+Data\Classic.lua
+Data\Forever.lua
+Engine.lua
+Map.lua
+Pins.xml
+UI.lua
+Minimap.lua
+Capture.lua
