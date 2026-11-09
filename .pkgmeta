@@ -1,0 +1,15 @@
+package-as: DungeonQuestPickup
+
+# The addon lives in a subfolder of the repo; move it to the root of the package.
+move-folders:
+  DungeonQuestPickup/DungeonQuestPickup: DungeonQuestPickup
+
+ignore:
+  - Tools
+  - Media
+  - .github
+  - .gitignore
+
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
