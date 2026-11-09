@@ -3,7 +3,7 @@ local _, ns = ...
 local Map = {}
 ns.Map = Map
 
-local PIN_TEMPLATE = "DQT_MapPinTemplate"
+local PIN_TEMPLATE = "DQP_MapPinTemplate"
 local TEX_YELLOW = "Interface\\GossipFrame\\AvailableQuestIcon"
 local TEX_BLUE = "Interface\\GossipFrame\\DailyQuestIcon"
 local PIN_SIZE, PIN_SIZE_FOCUSED = 16, 26
@@ -43,14 +43,14 @@ end
 --------------------------------------------------------------------------
 -- Pin mixin (template defined in Pins.xml)
 --------------------------------------------------------------------------
-DQT_MapPinMixin = CreateFromMixins(MapCanvasPinMixin or {})
+DQP_MapPinMixin = CreateFromMixins(MapCanvasPinMixin or {})
 
-function DQT_MapPinMixin:OnLoad()
+function DQP_MapPinMixin:OnLoad()
     self:UseFrameLevelType("PIN_FRAME_LEVEL_AREA_POI")
     self:SetScalingLimits(1, 1.0, 1.2)
 end
 
-function DQT_MapPinMixin:OnAcquired(pin, nx, ny)
+function DQP_MapPinMixin:OnAcquired(pin, nx, ny)
     self.pin = pin
     self:SetPosition(nx, ny)
     local focused = Map.focus == pin.id
@@ -62,11 +62,11 @@ function DQT_MapPinMixin:OnAcquired(pin, nx, ny)
     self.Glow:SetShown(focused)
 end
 
-function DQT_MapPinMixin:OnMouseEnter()
+function DQP_MapPinMixin:OnMouseEnter()
     ns.UI.ShowQuestTooltip(self, self.pin.id)
 end
 
-function DQT_MapPinMixin:OnMouseLeave()
+function DQP_MapPinMixin:OnMouseLeave()
     GameTooltip:Hide()
 end
 

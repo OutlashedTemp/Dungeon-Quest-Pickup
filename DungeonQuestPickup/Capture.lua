@@ -1,7 +1,7 @@
--- Dev helpers for filling Data/Forever.lua by hand (only active with /dqt dev):
+-- Dev helpers for filling Data/Forever.lua by hand (only active with /dqp dev):
 --   * captures unknown Forever / dungeon quests when an NPC offers or you accept them
---   * /dqt here prints your position as a ready-to-paste data line
---   * /dqt api reports which APIs this client exposes
+--   * /dqp here prints your position as a ready-to-paste data line
+--   * /dqp api reports which APIs this client exposes
 local _, ns = ...
 
 local Capture = {}

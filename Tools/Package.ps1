@@ -1,11 +1,11 @@
 # Package.ps1
-# Builds Releases\DungeonQuestTracker-<version>.zip, ready to upload to CurseForge / Wago.
+# Builds Releases\DungeonQuestPickup-<version>.zip, ready to upload to CurseForge / Wago.
 # The zip contains only the addon folder (plus LICENSE, README, CHANGELOG inside it).
 #
 # Usage: .\Tools\Package.ps1
 
 $root      = Split-Path $PSScriptRoot -Parent
-$addonName = "DungeonQuestTracker"
+$addonName = "DungeonQuestPickup"
 $addonPath = Join-Path $root $addonName
 $tocPath   = Join-Path $addonPath "$addonName.toc"
 
@@ -16,7 +16,7 @@ if (-not $versionLine) {
 }
 $version = $versionLine.Matches[0].Groups[1].Value.Trim()
 
-$staging = Join-Path ([System.IO.Path]::GetTempPath()) "dqt-package-$version"
+$staging = Join-Path ([System.IO.Path]::GetTempPath()) "dqp-package-$version"
 $releases = Join-Path $root "Releases"
 $zipPath = Join-Path $releases "$addonName-$version.zip"
 

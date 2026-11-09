@@ -1,10 +1,10 @@
 """
-Generates DungeonQuestTracker/Data/Classic.lua from QuestieDB's Forever data.
+Generates DungeonQuestPickup/Data/Classic.lua from QuestieDB's Forever data.
 
 Usage:
     pip install lupa
     git clone --depth 1 https://github.com/Questie/QuestieDB.git
-    python generate_classic.py <path-to-QuestieDB> <path-to-DungeonQuestTracker>
+    python generate_classic.py <path-to-QuestieDB> <path-to-DungeonQuestPickup>
 
 QuestieDB is GPLv3. The generated file is derived data - keep the addon GPLv3
 if you ever publish it.

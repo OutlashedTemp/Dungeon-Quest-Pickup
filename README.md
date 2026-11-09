@@ -1,8 +1,10 @@
-# Dungeon Quest Tracker
+# Dungeon Quest Pickup
 
 A **WoW Forever** addon that lists every dungeon quest available to your character, color coded by status, with world map pins for the quests you can pick up right now.
 
 By **CrownedFoxxy**.
+
+*Formerly named "Dungeon Quest Tracker" (1.0.x).*
 
 > ⚠ **Horde and Skyborne are untested.** The addon has only been tested on Alliance characters so far. Quest data and colors may be wrong on Horde or Skyborne characters. Please report anything that looks off.
 
@@ -29,10 +31,10 @@ By **CrownedFoxxy**.
 
 | Command | Action |
 |---|---|
-| `/dqt` | Toggle the window (also: minimap button, addon compartment) |
-| `/dqt pins` | Toggle world map pins (minimap button right-click does the same) |
-| `/dqt minimap` | Show/hide the minimap button |
-| `/dqt waypoint` | Toggle setting a waypoint when you click a quest |
+| `/dqp` | Toggle the window (also: minimap button, addon compartment) |
+| `/dqp pins` | Toggle world map pins (minimap button right-click does the same) |
+| `/dqp minimap` | Show/hide the minimap button |
+| `/dqp waypoint` | Toggle setting a waypoint when you click a quest |
 
 ## Known limitations
 
@@ -64,4 +66,4 @@ I used **Claude** (Anthropic's AI) as a coding tool. It wrote the Lua code and t
 
 ## License
 
-Dungeon Quest Tracker is licensed under the **GNU General Public License v3.0**. See [LICENSE](LICENSE).
+Dungeon Quest Pickup is licensed under the **GNU General Public License v3.0**. See [LICENSE](LICENSE).

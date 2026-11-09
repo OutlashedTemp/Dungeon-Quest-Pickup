@@ -4,7 +4,7 @@
 -- Dungeon fields:
 --   name, min, max          display name + level range
 --   zone                    zone the entrance is in (display only)
---   entrance = { map, x, y } uiMapID + coords 0-100. Get them in-game with /dqt here
+--   entrance = { map, x, y } uiMapID + coords 0-100. Get them in-game with /dqp here
 --
 -- Quest fields (Q[questID] = { ... }):
 --   name                    quest name
@@ -20,7 +20,7 @@
 --   inside = true           quest starts inside the dungeon -> shown as [INSIDE], no map pin
 --   (no start at all)       questgiver unknown -> red ! in the list, no map pin
 --
--- Capture helper: talk to a quest giver for a new quest -> /dqt captured prints a draft line.
+-- Capture helper: talk to a quest giver for a new quest -> /dqp captured prints a draft line.
 local _, ns = ...
 local D, Q = ns.Data.Dungeons, ns.Data.Quests
 

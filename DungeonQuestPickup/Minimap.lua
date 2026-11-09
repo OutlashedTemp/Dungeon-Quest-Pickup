@@ -27,7 +27,7 @@ local function OnDragUpdate()
 end
 
 function MinimapButton.Init()
-    button = CreateFrame("Button", "DQT_MinimapButton", Minimap)
+    button = CreateFrame("Button", "DQP_MinimapButton", Minimap)
     button:SetSize(31, 31)
     button:SetFrameStrata("MEDIUM")
     button:SetFrameLevel(8)
@@ -53,7 +53,7 @@ function MinimapButton.Init()
 
     button:SetScript("OnClick", function(_, mouse)
         if mouse == "RightButton" then
-            SlashCmdList.DQT("pins")
+            SlashCmdList.DQP("pins")
         else
             ns.UI.Toggle()
         end
@@ -62,7 +62,7 @@ function MinimapButton.Init()
     button:SetScript("OnDragStop", function(self) self:SetScript("OnUpdate", nil) end)
     button:SetScript("OnEnter", function(self)
         GameTooltip:SetOwner(self, "ANCHOR_LEFT")
-        GameTooltip:AddLine("|cff" .. ns.ACCENT .. "Dungeon Quest Tracker|r")
+        GameTooltip:AddLine("|cff" .. ns.ACCENT .. "Dungeon Quest Pickup|r")
         GameTooltip:AddLine("Left-click: toggle window", 1, 1, 1)
         GameTooltip:AddLine("Right-click: toggle map pins", 1, 1, 1)
         GameTooltip:AddLine("Drag: move button", 0.6, 0.6, 0.6)

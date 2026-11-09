@@ -1,4 +1,4 @@
--- Dungeon Quest Tracker by CrownedFoxxy. Licensed under GPL-3.0, see LICENSE.
+-- Dungeon Quest Pickup by CrownedFoxxy. Licensed under GPL-3.0, see LICENSE.
 local ADDON, ns = ...
 
 ns.Data = { Dungeons = {}, Quests = {} }
@@ -17,7 +17,7 @@ local DEFAULTS = {
     mapPins = true,
     setWaypoint = true,
     collapsed = {},
-    devMode = false, -- data-entry helpers (quest capture, /dqt here, /dqt api)
+    devMode = false, -- data-entry helpers (quest capture, /dqp here, /dqp api)
 }
 
 local CHAR_DEFAULTS = {
@@ -36,7 +36,7 @@ local function ApplyDefaults(target, defaults)
 end
 
 function ns.Print(msg)
-    print("|cff" .. ns.ACCENT .. "DQT|r " .. tostring(msg))
+    print("|cff" .. ns.ACCENT .. "DQP|r " .. tostring(msg))
 end
 
 -- Simple callback list: modules register to be told when quest state changes.
@@ -71,12 +71,12 @@ events:RegisterEvent("QUEST_LOG_UPDATE")
 events:SetScript("OnEvent", function(_, event, arg1)
     if event == "ADDON_LOADED" then
         if arg1 ~= ADDON then return end
-        DQT_DB = DQT_DB or {}
-        DQT_CharDB = DQT_CharDB or {}
-        ApplyDefaults(DQT_DB, DEFAULTS)
-        ApplyDefaults(DQT_CharDB, CHAR_DEFAULTS)
-        ns.db = DQT_DB
-        ns.chardb = DQT_CharDB
+        DQP_DB = DQP_DB or {}
+        DQP_CharDB = DQP_CharDB or {}
+        ApplyDefaults(DQP_DB, DEFAULTS)
+        ApplyDefaults(DQP_CharDB, CHAR_DEFAULTS)
+        ns.db = DQP_DB
+        ns.chardb = DQP_CharDB
         if ns.Minimap then ns.Minimap.Init() end
         if ns.Map then ns.Map.Init() end
         return
@@ -95,12 +95,12 @@ end)
 
 local function Help()
     ns.Print("commands:")
-    print("  /dqt - toggle window")
-    print("  /dqt pins - toggle world map pins")
-    print("  /dqt minimap - toggle minimap button")
-    print("  /dqt waypoint - toggle native waypoint on click")
+    print("  /dqp - toggle window")
+    print("  /dqp pins - toggle world map pins")
+    print("  /dqp minimap - toggle minimap button")
+    print("  /dqp waypoint - toggle native waypoint on click")
     if ns.db.devMode then
-        print("  dev: /dqt here, /dqt captured, /dqt api, /dqt dev (turn off)")
+        print("  dev: /dqp here, /dqp captured, /dqp api, /dqp dev (turn off)")
     end
 end
 
@@ -110,8 +110,8 @@ local DEV_COMMANDS = {
     api = function() ns.Capture.ProbeApi() end,
 }
 
-SLASH_DQT1 = "/dqt"
-SlashCmdList.DQT = function(msg)
+SLASH_DQP1 = "/dqp"
+SlashCmdList.DQP = function(msg)
     local cmd = strtrim(msg or ""):lower()
     if cmd == "" then
         ns.UI.Toggle()
@@ -136,6 +136,6 @@ SlashCmdList.DQT = function(msg)
     end
 end
 
-function DQT_OnAddonCompartmentClick()
+function DQP_OnAddonCompartmentClick()
     ns.UI.Toggle()
 end

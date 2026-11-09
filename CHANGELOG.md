@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0 (2026-11-09)
+
+- Renamed from "Dungeon Quest Tracker" to **Dungeon Quest Pickup** to avoid clashing with another addon of the same name. The addon folder is now `DungeonQuestPickup` and the command is `/dqp`. Settings and hidden quests from 1.0.x are not carried over.
+
 ## 1.0.1 (2026-11-09)
 
 - Scarlet Monastery is split into its four wings (Graveyard, Library, Armory, Cathedral). Quests that span several wings are listed under each of them.

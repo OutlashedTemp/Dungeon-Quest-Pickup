@@ -80,7 +80,7 @@ local ignoredCollapsed = true -- collapsed on every login/reload
 local linkFrame
 local function ShowLinkPopup(title, url)
     if not linkFrame then
-        linkFrame = CreateFrame("Frame", "DQT_LinkFrame", UIParent, "BackdropTemplate")
+        linkFrame = CreateFrame("Frame", "DQP_LinkFrame", UIParent, "BackdropTemplate")
         linkFrame:SetSize(420, 86)
         linkFrame:SetPoint("CENTER", 0, 120)
         linkFrame:SetFrameStrata("DIALOG")
@@ -88,7 +88,7 @@ local function ShowLinkPopup(title, url)
         linkFrame:SetBackdrop({ bgFile = "Interface\\Buttons\\WHITE8X8", edgeFile = "Interface\\Buttons\\WHITE8X8", edgeSize = 1 })
         linkFrame:SetBackdropColor(unpack(BG))
         linkFrame:SetBackdropBorderColor(ORANGE[1], ORANGE[2], ORANGE[3], 0.8)
-        tinsert(UISpecialFrames, "DQT_LinkFrame")
+        tinsert(UISpecialFrames, "DQP_LinkFrame")
 
         linkFrame.title = linkFrame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
         linkFrame.title:SetPoint("TOPLEFT", PAD, -PAD)
@@ -364,7 +364,7 @@ end
 
 local function Build()
     local pos = ns.db.frame
-    frame = CreateFrame("Frame", "DQT_MainFrame", UIParent, "BackdropTemplate")
+    frame = CreateFrame("Frame", "DQP_MainFrame", UIParent, "BackdropTemplate")
     frame:SetSize(pos.w, pos.h)
     frame:SetPoint(pos.point, UIParent, pos.point, pos.x, pos.y)
     frame:SetFrameStrata("MEDIUM")
@@ -379,11 +379,11 @@ local function Build()
     frame:SetBackdrop({ bgFile = "Interface\\Buttons\\WHITE8X8", edgeFile = "Interface\\Buttons\\WHITE8X8", edgeSize = 1 })
     frame:SetBackdropColor(unpack(BG))
     frame:SetBackdropBorderColor(ORANGE[1], ORANGE[2], ORANGE[3], 0.8)
-    tinsert(UISpecialFrames, "DQT_MainFrame")
+    tinsert(UISpecialFrames, "DQP_MainFrame")
 
     local title = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
     title:SetPoint("TOPLEFT", PAD, -PAD)
-    title:SetText("|cff" .. ns.ACCENT .. "Dungeon Quest Tracker|r")
+    title:SetText("|cff" .. ns.ACCENT .. "Dungeon Quest Pickup|r")
 
     frame.subtitle = frame:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
     frame.subtitle:SetPoint("TOPLEFT", title, "BOTTOMLEFT", 0, -3)
