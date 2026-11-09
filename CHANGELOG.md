@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.1 (2026-11-09)
+
+- Added the CurseForge project ID, so the CurseForge app recognizes the addon.
+- Releases are now built and uploaded automatically.
+
 ## 1.1.0 (2026-11-09)
 
 - Renamed from "Dungeon Quest Tracker" to **Dungeon Quest Pickup** to avoid clashing with another addon of the same name. The addon folder is now `DungeonQuestPickup` and the command is `/dqp`. Settings and hidden quests from 1.0.x are not carried over.
